@@ -3,13 +3,14 @@ import styles from './Program.module.css';
 
 function Program(){
   return (
-    <body style={{backgroundColor: 'black'}}>
+    <body style={{backgroundColor: '#181818'}}>
     <header>
         <NavBar/>
     </header>
     <main className={styles.mainContainer}>
+      {/* content - curriculum */}
       <div className={styles.contentContainer}>
-        <text className={styles.titleText}>Curriculum</text>
+        <text className={styles.titleText}>curriculum</text>
         <div className={styles.divider}></div>
         <div className={styles.rowContainer}>
           <div className={styles.bigBox}>
@@ -20,6 +21,7 @@ function Program(){
           </div>
         </div>
       </div>
+      {/* content - 외부 활동 */}
       <div className={styles.contentContainer}>
         <text className={styles.titleText}>외부 활동</text>
         <div className={styles.divider}></div>

@@ -1,7 +1,6 @@
 import Button from '../components/Home_Button';
 import NavBar from '../components/NavBar';
 import styles from './Home.module.css';
-import backgroundImg from '../components/ewha_logo.png'
 
 function Home (){
   return (

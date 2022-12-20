@@ -1,0 +1,5 @@
+.NavStyle {
+    border-bottom: 1px solid #33423E;
+    /* height media query!! */
+    height: 70px;
+  }
