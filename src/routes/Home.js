@@ -1,7 +1,7 @@
-//import Button from '../components/Button';
+import Button from '../components/Home_Button';
 import NavBar from '../components/NavBar';
 import styles from './Home.module.css';
-//import logo from '../components/meerkat.jpg'
+import backgroundImg from '../components/ewha_logo.png'
 
 function Home (){
   return (
@@ -11,7 +11,6 @@ function Home (){
       <div className={styles.divider}></div>
     </header>
     <main className={styles.mainContainer}>
-      <div>
       <div className={styles.rowContainer}>
         <div className={styles.columnContainer}>
           <text className={styles.titleText}>WE STAN</text>
@@ -27,10 +26,50 @@ function Home (){
           </text>
         </div>
       </div>
-      <text className={styles.midText}>
-        EWHA - CONTROL OF PROGRAM SECURITY
-      </text>
-      
+
+      <div className={styles.midRowContainer}>
+        <text className={styles.midText}>
+          EWHA - CONTROL OF PROGRAM SECURITY
+        </text>
+        <div className={styles.midTextButton}>
+          <Button/>
+        </div>
+      </div>
+
+      <div className={`${styles.midColumnContainer} ${styles.background}`}>
+        <text className={styles.introTitleContainer}>
+          E-COPS는 이런 동아리야
+        </text>          
+        <text className={styles.introContainer}>
+          E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.
+        </text>
+        <text className={styles.introContainer}>
+          사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.
+        </text>
+        <text className={styles.introContainer}>
+          E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.
+        </text>
+        <text className={styles.introContainer}>
+          사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.
+        </text>
+        <text className={styles.introContainer}>
+          E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.
+        </text>
+        <text className={styles.introContainer}>
+          사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.
+        </text>
+        <text className={styles.introContainer}>
+          E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.
+        </text>
+        <text className={styles.introContainer}>
+          사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.
+        </text>
+        <text className={styles.introContainer}>
+          E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.
+        </text>
+        <text className={styles.introContainer}>
+          사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.
+        </text>
       </div>
 
 
