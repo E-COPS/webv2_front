@@ -1,0 +1,59 @@
+.mainContainer {
+  padding: 30px 100px;
+
+}
+
+.contentContainer {
+  height: auto;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+}
+
+.titleText {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+
+.divider {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.bigBox {
+  margin: 15px;
+  background-color: white;
+  border-radius: 30px;
+  width: 350px;
+  height: 250px;
+  padding: 30px;
+ }
+
+.smallBox {
+ margin: 15px;
+ background-color: white;
+ border-radius: 30px;
+ width: 250px;
+ height: 270px;
+ padding: 30px;
+}
+
+.contentText {
+  font-size: 18px;
+  padding: 10px;
+  color: black;
+}
+
+

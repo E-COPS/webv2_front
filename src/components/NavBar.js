@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
       <Container>
         {/* logo */}
         <Navbar.Brand href="/">E-COPS</Navbar.Brand>
