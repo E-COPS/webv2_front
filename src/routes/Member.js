@@ -1,11 +1,12 @@
 import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
 import TextBox from '../components/TextBox';
 import ProfileBox from '../components/ProfileBox';
 import styles from './Member.module.css';
 
 function Member(){
   return (
-    <body style={{backgroundColor: '#181818'}}>
+    <body style={{backgroundColor: '#1A1C1D'}}>
     <header>
         <NavBar/>
     </header>
@@ -53,6 +54,13 @@ function Member(){
         </div>
       </div>
     </main>
+
+    {/* bottom bars */}
+    <footer>
+      <NavBar className={styles.secondNavBar}/>
+      <BottomBar/>
+    </footer>
+
     </body>
   );
 }

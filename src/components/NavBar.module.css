@@ -1,5 +1,17 @@
-.NavStyle {
-    border-bottom: 1px solid #33423E;
-    /* height media query!! */
+.navStyle {
+    background-color: #1A1C1D;
+}
+
+
+/* 큰 화면 */
+@media screen and (min-width:1000px) {
+  .navStyle {
     height: 70px;
   }
+}
+
+.navText {
+  color: white;
+  font-size: 15px;
+  margin: 0px 10px;
+}

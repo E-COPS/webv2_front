@@ -1,9 +1,10 @@
 import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
 import styles from './Program.module.css';
 
 function Program(){
   return (
-    <body style={{backgroundColor: '#181818'}}>
+    <body style={{backgroundColor: '#1A1C1D'}}>
     <header>
         <NavBar/>
     </header>
@@ -38,6 +39,13 @@ function Program(){
         </div>
       </div>
     </main>
+
+    {/* bottom bars */}
+    <footer>
+      <NavBar/>
+      <BottomBar/>
+    </footer>
+    
     </body>
   );
 }

@@ -1,13 +1,13 @@
 import Button from '../components/Home_Button';
 import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
 import styles from './Home.module.css';
 
 function Home (){
   return (
-    <body style={{backgroundColor: 'black'}}>
+    <body style={{backgroundColor: '#1A1C1D'}}>
     <header>
       <NavBar/>
-      <div className={styles.divider}></div>
     </header>
     <main className={styles.mainContainer}>
       <div className={styles.rowContainer}>
@@ -73,6 +73,12 @@ function Home (){
 
 
     </main>
+
+    {/* bottom bars */}
+    <footer>
+      <NavBar/>
+      <BottomBar/>
+    </footer>
 
     </body>
   );

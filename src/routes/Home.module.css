@@ -1,6 +1,9 @@
 .mainContainer {
-    padding: 50x 100px;
-  }
+    padding: 100px;
+    padding-top: 50px;
+    border-top: 1px solid #33423E;
+    border-bottom: 1px solid #33423E;
+}
 
 .photo{
     height: 300px;

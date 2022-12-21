@@ -1,0 +1,16 @@
+.navStyle {
+  /* height media query!! */
+  height: 100px;
+  margin-top: 20px;
+  background-color: #1A1C1D;
+}
+
+.navText {
+  color: white;
+  font-size: 15px;
+}
+
+.iconImg {
+  width: 100px;
+  height: 100px;
+}

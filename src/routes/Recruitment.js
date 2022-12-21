@@ -1,11 +1,10 @@
 import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
 import styles from './Recruitment.module.css';
 
 function Recruitment(){
   return (
-    <>
-    <body style={{ backgroundColor: 'black' }}>
-
+    <body style={{ backgroundColor: '#1A1C1D' }}>
       <header>
         <NavBar/>
       </header>
@@ -59,7 +58,14 @@ function Recruitment(){
           </div>
         </div> 
       </main>
-    </body></>
+
+    {/* bottom bars */}
+    <footer>
+      <NavBar/>
+      <BottomBar/>
+    </footer>
+
+    </body>
   );
 }
 
