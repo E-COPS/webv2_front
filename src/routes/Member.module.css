@@ -16,16 +16,16 @@
   }
   
   .titleText {
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 48px;
+    font-weight: 800;
     padding: 10px;
     color: white;
     margin-bottom: 30px;
   }
   
   .linkText {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 600;
     padding: 10px;
     color: #00D9A5;
     text-decoration: underline;
@@ -47,6 +47,5 @@
   }
   
   .contentText {
-    font-size: 15px;
-    color: white;
+    font-size: 16px;
   }

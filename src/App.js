@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { createGlobalStyle } from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './routes/Home';
 import Activity from './routes/Activity';
@@ -6,9 +7,25 @@ import Program from './routes/Program';
 import Member from './routes/Member';
 import Recruitment from './routes/Recruitment';
 
+// style 전체 적용
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  }
+
+  body {
+    background-color: #1A1C1D;
+    font-family: 'Inter', sans-serif;
+    color: white;
+  }
+`;
+
 
 function App() {
   return (
+    <>
+    <GlobalStyle/>
     <Router>
       <Routes>
         {/* other pages */}
@@ -20,6 +37,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
       </Routes>
     </Router>
+    </>
   );
 }
  

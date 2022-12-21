@@ -4,7 +4,7 @@ import styles from './Program.module.css';
 
 function Program(){
   return (
-    <body style={{backgroundColor: '#1A1C1D'}}>
+    <body>
     <header>
         <NavBar/>
     </header>

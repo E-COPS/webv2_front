@@ -5,7 +5,7 @@ import styles from './Home.module.css';
 
 function Home (){
   return (
-    <body style={{backgroundColor: '#1A1C1D'}}>
+    <body>
     <header>
       <NavBar/>
     </header>

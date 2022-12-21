@@ -4,7 +4,7 @@ import styles from './Activity.module.css';
 
 function Activity(){
   return (
-    <body style={{backgroundColor: '#1A1C1D'}}>
+    <body>
     <header>
         <NavBar/>
     </header>

@@ -4,7 +4,7 @@ import styles from './Recruitment.module.css';
 
 function Recruitment(){
   return (
-    <body style={{ backgroundColor: '#1A1C1D' }}>
+    <body>
       <header>
         <NavBar/>
       </header>

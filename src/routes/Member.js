@@ -6,7 +6,7 @@ import styles from './Member.module.css';
 
 function Member(){
   return (
-    <body style={{backgroundColor: '#1A1C1D'}}>
+    <body>
     <header>
         <NavBar/>
     </header>
