@@ -4,8 +4,13 @@ import styles from './Recruitment.module.css';
 import Button from '../components/Recruitment_Button';
 /*import { Button } from 'bootstrap';*/
 /*import toggleButton from '../components/Toggle_Button';*/
+import React, { useState } from 'react';
 
 function Recruitment(){
+  const [btnClick_1, setBtnClick_1] = useState(false);
+  const [btnClick_2, setBtnClick_2] = useState(false);
+  const [btnClick_3, setBtnClick_3] = useState(false);
+
   return (
     <body>
       <header>
@@ -60,14 +65,61 @@ function Recruitment(){
           <text className={styles.midText}>자주 묻는 질문</text>
         </div>
         <div className={styles.columnContainer}>
+          {/* 질문 1 */}
           <div className={styles.toggle}>
-            <text className={styles.contentBigText}>E-COPS는 어떤 동아리인가요?</text>
+            <button 
+            className={styles.btnRow}
+            onClick={()=>setBtnClick_1(!btnClick_1)}
+            >
+              <text className={styles.contentBigText}>E-COPS는 어떤 동아리인가요?</text>
+              <text className={styles.contentBigText}>
+                {/* 버튼 클릭 여부에 따라 모양 다르게*/}
+                {btnClick_1 ? '▲' : '▼'}
+              </text>
+            </button>
+            {/* 버튼 클릭 여부에 따라 답변 text 렌더링*/}
+            {btnClick_1 ? 
+            (<div className={styles.textBox}>
+              <text style={{fontSize: 18}}>답변 1</text>
+            </div>)
+            : 
+            <div></div>}
           </div>
+          {/* 질문 2 */}
           <div className={styles.toggle}>
-            <text className={styles.contentBigText}>E-COPS는 어떤 동아리인가요?</text>
+            <button 
+            className={styles.btnRow}
+            onClick={()=>setBtnClick_2(!btnClick_2)}
+            >
+              <text className={styles.contentBigText}>E-COPS는 어떤 동아리인가요?</text>
+              <text className={styles.contentBigText}>
+                {btnClick_2 ? '▲' : '▼'}
+              </text>
+            </button>
+            {btnClick_2 ? 
+            (<div className={styles.textBox}>
+              <text style={{fontSize: 18}}>답변 2</text>
+            </div>)
+            : 
+            <div></div>}
           </div>
+          {/* 질문 3 */}
           <div className={styles.toggle}>
-            <text className={styles.contentBigText}>E-COPS는 어떤 동아리인가요?</text>
+            <button 
+            className={styles.btnRow}
+            onClick={()=>setBtnClick_3(!btnClick_3)}
+            >
+              <text className={styles.contentBigText}>E-COPS는 어떤 동아리인가요?</text>
+              <text className={styles.contentBigText}>
+                {btnClick_3 ? '▲' : '▼'}
+              </text>
+            </button>
+            {btnClick_3 ? 
+            (<div className={styles.textBox}>
+              <text style={{fontSize: 18}}>답변 3</text>
+            </div>)
+            : 
+            <div></div>}
           </div>
         </div> 
         <div className ={styles.grayContainer}>
