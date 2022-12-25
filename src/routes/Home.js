@@ -1,13 +1,13 @@
 import Button from '../components/Home_Button';
 import NavBar from '../components/NavBar';
 import styles from './Home.module.css';
+import logo from '../components/hspace.png';
 
 function Home (){
   return (
     <body style={{backgroundColor: 'black'}}>
     <header>
       <NavBar/>
-      <div className={styles.divider}></div>
     </header>
     <main className={styles.mainContainer}>
       <div className={styles.rowContainer}>
@@ -69,6 +69,42 @@ function Home (){
         <text className={styles.introContainer}>
           사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.
         </text>
+      </div>
+
+      <div>
+        <div className={styles.historyBar}></div>
+        <text className={styles.historyTitleText}>
+          지금까지 E-COPS는?
+        </text>
+        <div className={styles.histColumnContainer}>
+          <text className={styles.historyYear}>History</text>
+          <text className={styles.historyYear}>2023 : YOU KNOW THE DRILL.</text>
+          <text className={styles.historyYear}>2022</text>
+          <text className={styles.histDescriptContainer}>버그바운티 활동</text>
+          <text className={styles.historyYear}>2021</text>
+          <text className={styles.historyYear}>2020</text>
+          <text className={styles.historyYear}>2019</text>
+          <text className={styles.historyYear}>2018</text>
+          <text className={styles.historyYear}>2017</text>
+          <text className={styles.historyYear}>2016</text>
+          <text className={styles.historyYear}>2015</text>
+          <text className={styles.historyYear}>2014 : THE BEGINNING OF E-COPS</text>
+          <text className={styles.historyYear}>E-COPS'S FOOTSTEP</text>
+        </div>
+      </div>
+
+      <div className={`${styles.scroll_container} ${styles.rowContainer}`}>
+        
+        <text className={styles.scroll_text}>
+          암호학은 E-COPS에서.   웹 해킹은 E-COPS에서.  포렌식은 E-COPS에서.  리버싱은 E-COPS에서.  개발은 E-COPS에서. 
+        </text>
+
+      </div>
+
+      <div>
+        <div className={styles.divider}></div>
+        <text className={styles.partnerTitleText}>E-COPS와 함께하는 파트너</text>
+        <img className={styles.hSpace} src={logo} alt="HSpace"></img>
       </div>
 
 

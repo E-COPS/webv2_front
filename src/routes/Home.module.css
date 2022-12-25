@@ -45,10 +45,10 @@
 
 
   .divider {
-    background-color: grey;
+    background-color: rgba(51, 66, 62, 1);
     height: 1px;
     width: 100%;
-    margin: 1px 0px;
+    margin-top: 10px;
   }
 
   .rowContainer {
@@ -106,4 +106,113 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 30%;
+}
+
+.historyTitleText {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+  padding-top: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.historyBar {
+  background-color: rgba(0, 217, 165, 1);
+  width: 0.3%;
+  border-left: 6px;
+  height: 1350px;
+  position: absolute;
+  top: 211.5%;
+  left: 21.2%;
+}
+
+.historyYear{
+  color: rgba(0, 217, 165, 1);
+  font-size: 45px;
+  font-weight: bold;
+  margin-left: 400px;
+  margin-top: 50px;
+  display: inline-block;
+  text-shadow: 5px 0px 2px rgb(2, 150, 115);
+}
+
+.histColumnContainer{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.histDescriptContainer{
+  color: white;
+  margin-left: 460px;
+}
+
+.partnerTitleText {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+  padding-top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hSpace{
+  padding: 50px;
+  margin-left: 300px;
+}
+
+
+.scroll_container {
+  margin-top: 100px;
+  background-color: rgba(51, 66, 62, 1);
+  height: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.scroll_text {
+  text-align: right;
+  color: white;
+  margin-top: 1px;
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-animation: my-animation 30s linear infinite;
+  -webkit-animation: my-animation 30s linear infinite;
+  animation: my-animation 30s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
 }
