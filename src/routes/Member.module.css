@@ -1,7 +1,12 @@
 .mainContainer {
-    padding: 30px 100px;
-  }
-  
+    padding: 100px;
+    padding-top: 50px;
+    border-top: 1px solid #33423E;
+    border-bottom: 1px solid #33423E;
+}
+
+
+
   .headerContainer {
     height: 200px;
     width: 100%;
@@ -13,16 +18,16 @@
   }
   
   .titleText {
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 48px;
+    font-weight: 800;
     padding: 10px;
     color: white;
     margin-bottom: 30px;
   }
   
   .linkText {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 600;
     padding: 10px;
     color: #00D9A5;
     text-decoration: underline;
@@ -32,18 +37,36 @@
     height: auto;
     width: 100%;
     margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .rowContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 1000px;
     height: auto;
     margin-top: 50px;
   }
   
   .contentText {
-    font-size: 15px;
-    color: white;
+    font-size: 16px;
   }
+
+
+  /* 작은 화면 */
+@media screen and (max-width:1000px) {
+  .mainContainer {
+    padding: 20px;
+    padding-top: 10px;
+  }
+  .titleText {
+    font-size: 30px;
+  }
+  .linkText {
+    font-size: 16px;
+  }
+}

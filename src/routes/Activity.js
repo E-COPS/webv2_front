@@ -1,6 +1,24 @@
+import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
+import styles from './Activity.module.css';
+
 function Activity(){
   return (
-    <h1>Activity</h1>
+    <body>
+    <header>
+        <NavBar/>
+    </header>
+    <main className={styles.mainContainer}>
+      
+    </main>
+
+    {/* bottom bars */}
+    <footer>
+      <NavBar/>
+      <BottomBar/>
+    </footer>
+    
+    </body>
   );
 }
 

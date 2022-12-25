@@ -1,11 +1,12 @@
 import Button from '../components/Home_Button';
 import NavBar from '../components/NavBar';
+import BottomBar from '../components/BottomBar';
 import styles from './Home.module.css';
 import logo from '../components/hspace.png';
 
 function Home (){
   return (
-    <body style={{backgroundColor: 'black'}}>
+    <body>
     <header>
       <NavBar/>
     </header>
@@ -109,6 +110,12 @@ function Home (){
 
 
     </main>
+
+    {/* bottom bars */}
+    <footer>
+      <NavBar/>
+      <BottomBar/>
+    </footer>
 
     </body>
   );
