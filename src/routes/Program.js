@@ -9,32 +9,61 @@ function Program(){
         <NavBar/>
     </header>
     <main className={styles.mainContainer}>
-      {/* content - curriculum */}
+      {/* header */}
+      <div className={styles.headerContainer}>
+        <text className={styles.titleText}>THE E-COPS CURRICULUM</text>
+      </div>
+      {/* content - 학기 중 세션 */}
       <div className={styles.contentContainer}>
-        <text className={styles.titleText}>curriculum</text>
-        <div className={styles.divider}></div>
+        {/* 소제목 */}
+        <div style={{width: 1000,}}>
+          <text className={styles.titleText} style={{fontSize: 32, padding: 0, margin: 0}}>학기 중 Session</text>
+        </div>
         <div className={styles.rowContainer}>
-          <div className={styles.bigBox}>
-          <text className={styles.contentText}>학기 중 세션</text>
+          {/* beginner box*/}
+          <div className={styles.columnContainer}>
+            <text className={styles.boxTitleText}>Beginner Track</text>
+            <div className={styles.boxContainer}></div>
           </div>
-          <div className={styles.bigBox}>
-          <text className={styles.contentText}>방학 세션</text>
+          {/* challenger box*/}
+          <div className={styles.columnContainer}>
+            <text className={styles.boxTitleText}>Challenger Track</text>
+            <div className={styles.boxContainer}></div>
           </div>
+        </div>
+      </div>
+      {/* content - 방학 중 세션 */}
+      <div className={styles.contentContainer}>
+        {/* 소제목 */}
+        <div style={{width: 1000,}}>
+          <text className={styles.titleText} style={{fontSize: 32, padding: 0, margin: 0}}>방학 중 Session</text>
+        </div>
+        <div className={styles.rowContainer}>
+          {/* box */}
+          <div className={styles.boxContainer} style={{width: '100%'}}></div>
         </div>
       </div>
       {/* content - 외부 활동 */}
       <div className={styles.contentContainer}>
-        <text className={styles.titleText}>외부 활동</text>
-        <div className={styles.divider}></div>
+        {/* 소제목 */}
+        <div style={{width: 1000,}}>
+          <text className={styles.titleText} style={{fontSize: 32, padding: 0, margin: 0}}>외부 활동</text>
+        </div>
         <div className={styles.rowContainer}>
-          <div className={styles.smallBox}>
-          <text className={styles.contentText}>외부 활동</text>
+          {/* 활동 1 */}
+          <div className={styles.columnContainer} style={{width: 300,}}>
+            <div className={styles.ImgContainer}></div>
+            <text className={styles.contentText}>활동 내용~~~</text>
           </div>
-          <div className={styles.smallBox}>
-          <text className={styles.contentText}>외부 활동</text>
+          {/* 활동 2 */}
+          <div className={styles.columnContainer}  style={{width: 300,}}>
+            <div className={styles.ImgContainer}></div>
+            <text className={styles.contentText}>활동 내용~~~</text>
           </div>
-          <div className={styles.smallBox}>
-          <text className={styles.contentText}>외부 활동</text>
+          {/* 활동 3 */}
+          <div className={styles.columnContainer}  style={{width: 300,}}>
+            <div className={styles.ImgContainer}></div>
+            <text className={styles.contentText}>활동 내용~~~</text>
           </div>
         </div>
       </div>
