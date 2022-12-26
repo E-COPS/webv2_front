@@ -5,6 +5,10 @@
     border-bottom: 1px solid #33423E;
 }
 
+.mainCenter{
+  align-items: center;
+}
+
 .photo{
     height: 300px;
     width: 400px;
@@ -18,7 +22,6 @@
     font-weight: bold;
     padding: 10px;
     color: white;
-    margin-left: 200px;
     display: inline-block;
   }
 
@@ -34,13 +37,12 @@
 .midTextButton{
     padding-top: 150px;
     display: inline-block;
-    margin-left: 400px;
+    margin-left: 200px;
 }
 
 .descriptionText{
     font-size: 25px;
     padding: 10px;
-    padding-right: 250px;
     color: white;
     display: inline-block;
 }
@@ -57,8 +59,8 @@
   .rowContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-between;
+    width: 1000px;
     height: auto;
     padding: 15px;
   }
@@ -68,21 +70,22 @@
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    padding: 15px;
     display: inline-block;
   }
 
   .columnContainer{
-    flex: 1;
+    width: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     height: 400px;
-    margin-left: 10px;
   }
 
 .midColumnContainer{
     direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .introTitleContainer{
@@ -117,6 +120,7 @@
   font-weight: bold;
   padding: 10px;
   padding-top: 300px;
+  padding-bottom: 100px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -127,33 +131,40 @@
 .historyBar {
   background-color: rgba(0, 217, 165, 1);
   width: 0.3%;
-  border-left: 15px;
   height: 1349px;
   position: absolute;
-  top: 218%;
-  left: 26.45%;
+  margin-bottom: 16.2px;
 }
 
 .historyYear{
   color: rgba(0, 217, 165, 1);
   font-size: 45px;
   font-weight: bold;
-  margin-left: 400px;
-  margin-top: 50px;
-  display: inline-block;
-  text-shadow: 5px 0px 2px rgb(2, 150, 115);
-}
-
-.histColumnContainer{
-  flex: 1;
+  margin-left: 0px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  text-shadow: 5px 0px 2px rgb(2, 150, 115);
+  position: absolute;
+  left: 0px;
+  top: 10px;
 }
 
 .histDescriptContainer{
   color: white;
-  margin-left: 460px;
+  margin-left: 70px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+
+.histColumnContainer{
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 200px;
+  border-left: solid 7px rgb(2, 150, 115);
+  position:relative;
+  height: 1050px;
 }
 
 .partnerTitleText {
@@ -184,6 +195,7 @@
   margin-top: 100px;
   background-color: rgba(51, 66, 62, 1);
   height: 50px;
+  width: 100%;
   border-radius: 5px;
   overflow: hidden;
 }
