@@ -3,10 +3,15 @@ import BottomBar from '../components/BottomBar';
 import TextBox from '../components/TextBox';
 import ProfileBox from '../components/ProfileBox';
 import styles from './Member.module.css';
+import { useMediaQuery } from 'react-responsive';
 
 function Member(){
+  const isMobile = useMediaQuery({maxWidth: 1000});
+  const isNormal = useMediaQuery({minWidth: 319})
   return (
     <body>
+    {isNormal?
+    <>
     <header>
         <NavBar/>
     </header>
@@ -18,6 +23,29 @@ function Member(){
         <text className={styles.linkText}>11기</text>
       </div>
       {/* content - Executive */}
+      {isMobile?
+      <div className={styles.contentContainer}>
+      <div style={{justifyContent: 'center'}}>
+        <TextBox text={'Executive'}/>
+      </div>
+      <div className={styles.smallRowContainer}>
+        <ProfileBox text='교육부 어쩌구' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+        <ProfileBox text='교육부 어쩌구' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+      </div>
+      <div className={styles.smallRowContainer}>
+        <ProfileBox text='교육부 어쩌구' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+        <ProfileBox text='교육부 어쩌구' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+      </div>
+      <div className={styles.smallRowContainer}>
+        <ProfileBox text='교육부 어쩌구' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+        <ProfileBox text='교육부 어쩌구' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+      </div>
+      <div className={styles.smallRowContainer}>
+        <ProfileBox text='교육부 어쩌구' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+        <ProfileBox text='교육부 어쩌구' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+      </div>
+      </div>
+      :
       <div className={styles.contentContainer}>
         <div style={{width: 1000,}}>
           <TextBox text={'Executive'}/>
@@ -37,8 +65,25 @@ function Member(){
           <div style={{width: 160, height: 200, opacity: 1}}></div>
         </div>
       </div>
+      }
 
       {/* content - E-COPS Web-TF */}
+      {isMobile?
+      <div className={styles.contentContainer}>
+      <div style={{justifyContent: 'center'}}>
+        <TextBox text={'E-COPS Web-TF'}/>
+      </div>
+      <div className={styles.smallRowContainer}>
+        <ProfileBox text='고민지 남윤정 김하은' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+      </div>
+      <div className={styles.smallRowContainer}>
+        <ProfileBox text='고민지 김유경 임영서 서아영 장하은' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+      </div>
+      <div className={styles.smallRowContainer}>
+        <ProfileBox text='이슬 이한선' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+      </div>
+      </div>
+      :
       <div className={styles.contentContainer}>
         <div style={{width: 1000,}}>
           <TextBox text={'E-COPS Web-TF'}/>
@@ -49,16 +94,29 @@ function Member(){
           <ProfileBox text='이슬 이한선' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
         </div>
       </div>
+      }
+      
 
       {/* content - Our Members */}
+      {isMobile?
       <div className={styles.contentContainer}>
-        <div style={{width: 1000,}}>
-          <TextBox text={'Our Members'}/>
-        </div>
-        <div style={{width: 1000, height: 'auto', marginTop: 50}}>
-          <text className={styles.contentText}>member member member member member member member member member member member member member member</text>
-        </div>
+      <div style={{justifyContent: 'center'}}>
+        <TextBox text={'Our Members'}/>
       </div>
+      <div style={{justifyContent: 'center', height: 'auto', marginTop: 50, paddingLeft: 20}}>
+        <text className={styles.contentText}>member member member member member member member member member member member member member member</text>
+      </div>
+      </div>
+      :
+      <div className={styles.contentContainer}>
+      <div style={{width: 1000,}}>
+        <TextBox text={'Our Members'}/>
+      </div>
+      <div style={{width: 1000, height: 'auto', marginTop: 50}}>
+        <text className={styles.contentText}>member member member member member member member member member member member member member member</text>
+      </div>
+      </div>
+      }
     </main>
 
     {/* bottom bars */}
@@ -66,7 +124,10 @@ function Member(){
       <NavBar className={styles.secondNavBar}/>
       <BottomBar/>
     </footer>
-
+    </>
+    :
+    <span>Your screen is too small</span>
+    }
     </body>
   );
 }
