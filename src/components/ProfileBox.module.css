@@ -19,11 +19,3 @@
   font-size: 15px;
   color: white;
 }
-
-/* 작은 화면 */
-@media screen and (max-width:1000px) {
-.profileImg {
-  width: 100px;
-  height: 100px;
-}
-}
