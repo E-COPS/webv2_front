@@ -11,7 +11,7 @@ function Home (){
       <NavBar/>
     </header>
     <main className={`${styles.mainContainer} ${styles.mainCenter}`}>
-      <div style={{width: '100%', display:'flex', flexDirection: 'row', justifyContent: 'center'}}>
+      <div style={{width: '100%', display:'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
       <div className={styles.rowContainer}>
         <div className={styles.columnContainer}>
           <text className={styles.titleText}>WE STAN</text>
@@ -27,8 +27,6 @@ function Home (){
           </text>
         </div>
       </div>
-      </div>
-
       <div className={styles.midRowContainer}>
         <text className={styles.midText}>
           EWHA - CONTROL OF PROGRAM SECURITY
@@ -39,6 +37,9 @@ function Home (){
           </a>
         </div>
       </div>
+      </div>
+
+      
 
       <div className={`${styles.midColumnContainer} ${styles.background}`}>
         <text className={styles.introTitleContainer}>

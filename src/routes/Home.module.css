@@ -31,13 +31,11 @@
     color: white;
     padding-top: 150px;
     display: inline-block;
-    margin-left: 230px;
 }
 
 .midTextButton{
     padding-top: 150px;
     display: inline-block;
-    margin-left: 200px;
 }
 
 .descriptionText{
@@ -67,10 +65,10 @@
 
   .midRowContainer{
     direction: row;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-between;
+    width: 1000px;
     height: auto;
-    display: inline-block;
+    display: flex;
   }
 
   .columnContainer{
@@ -165,6 +163,8 @@
   border-left: solid 7px rgb(2, 150, 115);
   position:relative;
   height: 1050px;
+  justify-content: space-between;
+  width: 1000px;
 }
 
 .partnerTitleText {
@@ -190,20 +190,28 @@
   margin-left: 300px;
 }
 
+.containerSize{
+  width: 1700px;
+}
+
 
 .scroll_container {
   margin-top: 100px;
   background-color: rgba(51, 66, 62, 1);
   height: 50px;
-  width: 100%;
   border-radius: 5px;
   overflow: hidden;
+  justify-content: space-between;
+  width: 100%;
+
 }
 
 .scroll_text {
   text-align: right;
   color: white;
   margin-top: 1px;
+  width: 1500px;
+  justify-content: space-between;
 
   /* animation properties */
   -moz-transform: translateX(-100%);
