@@ -32,7 +32,9 @@ function Home (){
           EWHA - CONTROL OF PROGRAM SECURITY
         </text>
         <div className={styles.midTextButton}>
-          <Button/>
+          <a href='./Recruitment'>
+            <Button/>
+          </a>
         </div>
       </div>
 
@@ -78,7 +80,9 @@ function Home (){
           지금까지 E-COPS는?
         </text>
         <div className={styles.histColumnContainer}>
+          <div className='start'>
           <text className={styles.historyYear}>History</text>
+          </div>
           <text className={styles.historyYear}>2023 : YOU KNOW THE DRILL.</text>
           <text className={styles.historyYear}>2022</text>
           <text className={styles.histDescriptContainer}>버그바운티 활동</text>
@@ -90,16 +94,22 @@ function Home (){
           <text className={styles.historyYear}>2016</text>
           <text className={styles.historyYear}>2015</text>
           <text className={styles.historyYear}>2014 : THE BEGINNING OF E-COPS</text>
+          <div className='fin'>
           <text className={styles.historyYear}>E-COPS'S FOOTSTEP</text>
+          </div>
         </div>
       </div>
 
       <div className={`${styles.scroll_container} ${styles.rowContainer}`}>
-        
         <text className={styles.scroll_text}>
-          암호학은 E-COPS에서.   웹 해킹은 E-COPS에서.  포렌식은 E-COPS에서.  리버싱은 E-COPS에서.  개발은 E-COPS에서. 
+          🔒암호학은 E-COPS에서.   
+          🔒웹 해킹은 E-COPS에서.  
+          🔒포렌식은 E-COPS에서.  
+          🔒리버싱은 E-COPS에서.  
+          🔒개발은 E-COPS에서. 
+          🔒암호학은 E-COPS에서.   
+          🔒포렌식은 E-COPS에서.
         </text>
-
       </div>
 
       <div>

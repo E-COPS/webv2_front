@@ -78,6 +78,7 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 400px;
+    margin-left: 10px;
   }
 
 .midColumnContainer{
@@ -126,11 +127,11 @@
 .historyBar {
   background-color: rgba(0, 217, 165, 1);
   width: 0.3%;
-  border-left: 6px;
-  height: 1350px;
+  border-left: 15px;
+  height: 1349px;
   position: absolute;
-  top: 211.5%;
-  left: 21.2%;
+  top: 218%;
+  left: 26.45%;
 }
 
 .historyYear{
@@ -165,6 +166,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.line{
+  color: white;
+  width: 100px;
+  height: 100px;
 }
 
 .hSpace{
