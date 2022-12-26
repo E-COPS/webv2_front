@@ -1,0 +1,18 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  background-color: transparent;
+  border: transparent; 
+ 
+  font-size: 20px;
+  font-weight: 800;
+  color:#00D9A5;
+  }
+
+  @media screen and (max-width:1000px) {
+    .btn {
+      font-size: 16px;
+    }
+
+  }
