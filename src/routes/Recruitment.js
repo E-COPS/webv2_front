@@ -33,34 +33,32 @@ function Recruitment(){
       <div className={styles.content3Container}>
          <text className={styles.midText}>RECURITING PROCESS</text>
        </div>
-        <div className={styles.rowContainer}>
-          <div className={styles.miniCircle}>
-            <div classname={styles.columnTextContainer}>
-              <text className={styles.contentTitleText}>서류접수</text>
-              <text className={styles.contentWhiteText}>00.00(W)~00.00(W)</text>
-              <text className={styles.contentWhiteText}>00시 마감</text>
-            </div>
-          </div>
-          <div className={styles.miniCircle}>
-            <div classname={styles.columnTextContainer}>
-             <text className={styles.contentTitleText}>서류 결과 발표</text>
-             <text className={styles.contentWhiteText}>00.00(W) 00시</text>
-           </div>
-          </div>
-          <div className={styles.miniCircle}>
-           <div classname={styles.columnTextContainer}>
-             <text className={styles.contentTitleText}>오프라인 면접</text>
-             <text className={styles.contentWhiteText}>00.00(W)~00.00(W)</text>
-             <text className={styles.contentWhiteText}>개별 연락 예정</text>
-            </div>
-          </div>
-          <div className={styles.miniCircle}>
-            <div classname={styles.columnTextContainer}>
-             <text className={styles.contentTitleText}>면접</text>
-              <text className={styles.contentWhiteText}>00.00(W)~00.00(W) 00시</text>
-           </div>
+       <div className={styles.rowContainer}>
+          <div className={styles.circleBox}>
+            <div className={styles.miniCircle}></div>
+            <div className={styles.miniCircle2}></div>
+            <text className={styles.contentTitleText}>서류접수</text>
+            <text className={styles.contentWhiteText}>00.00(W)~00.00(W)<br></br>00시 마감</text>
           </div> 
-        </div>
+          <div className={styles.circleBox}>
+            <div className={styles.miniCircle}></div>
+            <div className={styles.miniCircle2}></div>
+            <text className={styles.contentTitleText}>서류 결과 발표</text>
+            <text className={styles.contentWhiteText}>00.00(W) 00시</text>
+          </div> 
+          <div className={styles.circleBox}>
+            <div className={styles.miniCircle}></div>
+            <div className={styles.miniCircle2}></div>
+            <text className={styles.contentTitleText}>오프라인 면접</text>
+            <text className={styles.contentWhiteText}>00.00(W)~00.00(W)<br></br>개별 연락 예정</text>
+          </div> 
+          <div className={styles.circleBox}>
+            <div className={styles.miniCircle}></div>
+            <div className={styles.miniCircle2}></div>
+            <text className={styles.contentTitleText}>면접</text>
+            <text className={styles.contentWhiteText}>00.00(W) 00시</text>
+          </div> 
+          </div>
         <div className={styles.content3Container}>
           <text className={styles.midText}>자주 묻는 질문</text>
         </div>
