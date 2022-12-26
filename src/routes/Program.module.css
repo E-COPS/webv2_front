@@ -34,6 +34,14 @@
   margin: 30px 0px;
 }
 
+.smallRowContainer{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  margin-top: 50px;
+}
+
 .columnContainer {
   display: flex;
   flex-direction: column;
@@ -84,5 +92,8 @@
   }
   .titleText {
     font-size: 30px;
+  }
+  .boxTitleText {
+    font-size:  14px;
   }
 }
