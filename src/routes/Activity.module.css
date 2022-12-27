@@ -18,7 +18,8 @@
   flex-direction: row;
   justify-content: flex-start;
   padding-bottom: 30px;
-
+  flex-grow: 0;
+  flex-wrap: wrap;
 }
 
 .rowContainer2{
@@ -26,15 +27,19 @@
   padding-top: 40px;
   flex-direction: row;
   justify-content: flex-start;
+  flex-grow: 0;
+  flex-wrap: wrap;
 
 }
 
 .mintWhiteContainer{
+  display: flex;
+  flex-wrap: wrap;
   float: left;
   width: 255px;
   height: 230px;
   position: relative;
-
+  
 }
 
 .whiteBox{
@@ -68,13 +73,15 @@
   text-align: left;
   padding-top: 30px;
   padding-left: 20px;
-  margin-right: 30px;
+  margin-right: auto;
   background-color: #00D9A5;
   width: 220px;
   height: 200px;
   border-radius: 40px;
   position: relative;
   margin-top: 20px;
+  flex-wrap: wrap;
+
 }
 
 .mintBox2{
@@ -84,10 +91,13 @@
   padding-top: 30px;
   padding-left: 20px;
   margin-right: auto;
+  margin-bottom: 10px;
   background-color: #00D9A5;
   width: 220px;
   height: 200px;
   border-radius: 40px;
+  flex-wrap: wrap;
+
 }
 
 .titleText{
@@ -115,6 +125,7 @@
 
 .clickButton{
   display: flex;
+  text-align: center;
   width: 70px;
   height: 40px;
   border-radius: 50%;
@@ -122,8 +133,6 @@
   border: transparent;
   margin-top: 60px;
   margin-left: 110px;
-  justify-content: center;
-  align-items: center;
 }
 
 
@@ -282,3 +291,88 @@ line-height: 600px;
 color: #E3E8ED;
 text-shadow: -8px 8px 16px rgba(0, 0, 0, 0.25);
 }
+
+  /* 작은 화면 */
+  @media screen and (max-width:1000px) {
+    .mainContainer {
+      padding: 30px;
+      padding-top: 20px;
+    }
+    .columnContainer{
+      padding-bottom: 20px;
+    }
+    .rowContainer1{
+     padding-top: 8px;
+     padding-bottom: 6px;
+    }
+    .rowContainer2{
+      padding-top: 8px;
+    }
+    .mintWhiteContainer{
+      width: 150px;
+      height: 130px;
+    }
+    .whiteBox{
+      width: 140px;
+      height: 120px;
+      border-radius: 40px;
+      left: -10px;
+      top: 10px;
+    }
+    .mintBox1{
+      padding-top: 20px;
+      padding-left: 15px;
+      margin-right: 10px;
+      width: 140px;
+      height: 120px;
+      border-radius: 40px;
+
+    }
+    .mintBox1c{
+      padding-top: 20px;
+      padding-left: 15px;
+      margin-right: 5px;
+      margin-top: 15px;
+      width: 140px;
+      height: 120px;
+      border-radius: 40px;
+    }
+    .mintBox2{
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 140px;
+      height: 135px;
+      border-radius: 40px;
+    }
+    .titleText{
+      margin-top: 10px;
+      font-size: 40px;
+    }
+    .contentText{
+      font-size: 10px;
+    }
+    .boxText{
+      margin-top: 5px;
+      font-size: 14px;
+    }    
+    .boxContentText{
+      font-size: 10px;
+    }
+    .clickButton{
+      width: 60px;
+      height: 30px;
+      border-radius: 50%;
+      margin-top: 25px;
+      margin-left: 50px;
+    }
+    .clickButton2{
+      width: 60px;
+      height: 30px;
+      border-radius: 50%;
+      margin-top: 3px;
+      margin-left: 50px;
+    }
+
+
+  }

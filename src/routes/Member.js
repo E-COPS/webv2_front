@@ -2,12 +2,15 @@ import NavBar from '../components/NavBar';
 import BottomBar from '../components/BottomBar';
 import TextBox from '../components/TextBox';
 import ProfileBox from '../components/ProfileBox';
+import backend from '../images/backend-icon.png';
+import frontend from '../images/frontend-icon.png';
+import design from '../images/design-icon.png';
 import styles from './Member.module.css';
 import { useMediaQuery } from 'react-responsive';
 
 function Member(){
   const isMobile = useMediaQuery({maxWidth: 1000});
-  const isNormal = useMediaQuery({minWidth: 319})
+  const isNormal = useMediaQuery({minWidth: 319});
   return (
     <body>
     {isNormal?
@@ -74,13 +77,13 @@ function Member(){
         <TextBox text={'E-COPS Web-TF'}/>
       </div>
       <div className={styles.smallRowContainer}>
-        <ProfileBox text='고민지 남윤정 김하은' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+        <ProfileBox big={true} text='고민지 남윤정 김하은' img={backend}/>
       </div>
       <div className={styles.smallRowContainer}>
-        <ProfileBox text='고민지 김유경 임영서 서아영 장하은' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+        <ProfileBox big={true} text='고민지 김유경 임영서 서아영 장하은' img={frontend}/>
       </div>
       <div className={styles.smallRowContainer}>
-        <ProfileBox text='이슬 이한선' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+        <ProfileBox big={true} text='이슬 이한선' img={design}/>
       </div>
       </div>
       :
@@ -89,9 +92,9 @@ function Member(){
           <TextBox text={'E-COPS Web-TF'}/>
         </div>
         <div className={styles.rowContainer}>
-          <ProfileBox text='고민지 남윤정 김하은' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-          <ProfileBox text='고민지 김유경 임영서 서아영 장하은' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-          <ProfileBox text='이슬 이한선' img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
+          <ProfileBox big={true} text='고민지 남윤정 김하은' img={backend}/>
+          <ProfileBox big={true} text='고민지 김유경 임영서 서아영 장하은' img={frontend}/>
+          <ProfileBox big={true} text='이슬 이한선' img={design}/>
         </div>
       </div>
       }

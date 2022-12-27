@@ -26,7 +26,7 @@ function Activity(){
               <text className={styles.boxText}>
                 Beginner Track
               </text>
-              <div className={styles.clickButton2}>
+              <div className={styles.clickButton}>
               <ActivityButton url='/'/>
             </div>
              </div>
@@ -35,7 +35,7 @@ function Activity(){
             <text className={styles.boxText}>
               Challenger Track
             </text>
-            <div className={styles.clickButton2}>
+            <div className={styles.clickButton}>
               <ActivityButton url='/'/>
             </div>
           </div>
