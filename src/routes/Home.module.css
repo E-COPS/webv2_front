@@ -25,6 +25,15 @@
     display: inline-block;
   }
 
+  .titleTextMobile {
+    font-size: 55px;
+    margin-left: 50px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+  }
+
 .midText{
     font-size: 35px;
     font-weight: bold;
@@ -33,10 +42,24 @@
     display: inline-block;
 }
 
+.midTextMobile{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding-top: 120px;
+  display: inline-block;
+
+}
+
 .midTextButton{
     padding-top: 150px;
     display: inline-block;
 }
+.midTextButtonMobile{
+  padding-top: 10px;
+  display: inline-block;
+}
+
 
 .descriptionText{
     font-size: 25px;
@@ -45,6 +68,13 @@
     display: inline-block;
 }
 
+.descriptionTextMobile{
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  display: inline-block;
+  margin-right: 10px;
+}
 
 
   .divider {
@@ -79,6 +109,14 @@
     height: 400px;
   }
 
+  .columnContainerMobile{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 400px;
+  }
+
 .midColumnContainer{
     direction: column;
     display: flex;
@@ -96,6 +134,16 @@
     align-items: center;
     justify-content: center;
 }
+.introTitleContainerMobile{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  padding-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .introContainer{
     font-size: 20px;
     color: white;
@@ -105,6 +153,16 @@
     align-items: center;
     justify-content: center;
 }
+.introContainerMobile{
+  font-size: 17px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .background{
     background-image: url('../components/ewha_logo.png');
@@ -125,7 +183,18 @@
   align-items: center;
   justify-content: center;
 }
-
+.historyTitleTextMobile {
+  font-size: 45px;
+  font-weight: bold;
+  padding: 10px;
+  padding-top: 300px;
+  padding-bottom: 60px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .historyBar {
   background-color: rgba(0, 217, 165, 1);
   width: 0.3%;
@@ -145,6 +214,18 @@
   left: 0px;
   top: 10px;
 }
+.historyYearMobile{
+  color: rgba(0, 217, 165, 1);
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 0px;
+  display: flex;
+  text-shadow: 5px 0px 2px rgb(2, 150, 115);
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+
 
 .histDescriptContainer{
   color: white;
@@ -153,6 +234,7 @@
   left: 0px;
   top: 10px;
 }
+
 
 .histColumnContainer{
   display: flex;
@@ -167,8 +249,32 @@
   width: 1000px;
 }
 
+.histColumnContainerMobile{
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 90px;
+  border-left: solid 7px rgb(2, 150, 115);
+  position:relative;
+  height: 1050px;
+  justify-content: space-between;
+  width: 1000px;
+}
+
 .partnerTitleText {
   font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+  padding-top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.partnerTitleTextMobile {
+  font-size: 45px;
   font-weight: bold;
   padding: 10px;
   padding-top: 50px;
@@ -188,6 +294,14 @@
 .hSpace{
   padding: 50px;
   margin-left: 300px;
+}
+
+.hSpaceCenter{
+  color: white;
+  display: flex;
+  -ms-flex-align: center;
+  width: 170px;
+  height: auto;
 }
 
 .containerSize{
