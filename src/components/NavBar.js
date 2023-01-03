@@ -5,9 +5,9 @@ import logo from '../images/logo-img.png';
 import { FiMenu } from "react-icons/fi";
 import styles from './NavBar.module.css';
 
-function NavBar() {
+function NavBar({isWhite}) {
   return (
-    <Navbar collapseOnSelect expand="lg" variant="dark" className={styles.navStyle}>
+    <Navbar collapseOnSelect expand="lg" variant="dark" className={styles.navStyle} style={{backgroundColor: isWhite && '#E5E5E5'}}>
       <Container className='px-0 align-items-center'>
         {/* logo */}
         <Navbar.Brand href="/">

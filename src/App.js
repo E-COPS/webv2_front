@@ -6,6 +6,13 @@ import Activity from './routes/Activity';
 import Program from './routes/Program';
 import Member from './routes/Member';
 import Recruitment from './routes/Recruitment';
+import Beginner from './routes/Beginner';
+import Challenger from './routes/Challenger';
+import Webhacking from './routes/Webhacking';
+import Reversing from './routes/Revesing';
+import Forensic from './routes/Forensic';
+import Development from './routes/Development';
+
 
 // style 전체 적용
 const GlobalStyle = createGlobalStyle`
@@ -33,6 +40,12 @@ function App() {
         <Route path='/program' element={<Program/>}/>
         <Route path='/member' element={<Member/>}/>
         <Route path='/recruitment' element={<Recruitment/>}/>
+        <Route path ='/Beginner' element={<Beginner/>}/>
+        <Route path ='/Challenger' element={<Challenger/>}/>
+        <Route path ='/Webhacking' element={<Webhacking/>}/>
+        <Route path ='/Reversing' element={<Reversing/>}/>
+        <Route path='/Forensic' element={<Forensic/>}/>
+        <Route path='/Development' element={<Development/>}/>
         {/* root page */}
         <Route path='/' element={<Home/>}/>
       </Routes>

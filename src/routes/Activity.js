@@ -27,7 +27,7 @@ function Activity(){
                 Beginner Track
               </text>
               <div className={styles.clickButton}>
-              <ActivityButton url='/'/>
+              <ActivityButton url='/Beginner'/>
             </div>
              </div>
             </div>          
@@ -36,7 +36,7 @@ function Activity(){
               Challenger Track
             </text>
             <div className={styles.clickButton}>
-              <ActivityButton url='/'/>
+              <ActivityButton url='/Challenger'/>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ function Activity(){
             무슨 모의 해킹<br></br>웹 환경 구현하여 모의 해킹하기
             </text>
             <div className={styles.clickButton2}>
-              <ActivityButton url='/'/>
+              <ActivityButton url='/Webhacking'/>
             </div>
           </div>
           <div className={styles.mintBox2}>
@@ -66,7 +66,7 @@ function Activity(){
             무슨 모의 해킹<br></br>웹 환경 구현하여 모의 해킹하기
             </text>
             <div className={styles.clickButton2}>
-              <ActivityButton url='/'/>
+              <ActivityButton url='/Reversing'/>
             </div>
           </div>
           <div className={styles.mintBox2}>
@@ -77,7 +77,7 @@ function Activity(){
             무슨 모의 해킹<br></br>웹 환경 구현하여 모의 해킹하기
             </text>
             <div className={styles.clickButton2}>
-              <ActivityButton url='/'/>
+              <ActivityButton url='/Forensic'/>
             </div>
           </div>
           <div className={styles.mintBox2}>
@@ -88,161 +88,13 @@ function Activity(){
             무슨 모의 해킹<br></br>웹 환경 구현하여 모의 해킹하기
             </text>
             <div className={styles.clickButton2}>
-              <ActivityButton url='/'/>
+              <ActivityButton url='/Development'/>
             </div>
           </div>
         </div>
       </div>
 
-      <div className={styles.beginContainer}>
-        <div className = {styles.beginBox}>
-          <div className ={styles.firstContainer}>
-            <div className ={styles.firstText}><br></br>E-COP'S------<br></br>Begginer Track</div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.begin2Container}>
-        <div className = {styles.begin2Box}>
-          <div className = {styles.secondContainer}>
-            <div className = {styles.secondText}>2022 Garallery</div>
-          </div>
-          <div className ={styles.rowContainer}>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-          </div>
-          <div className ={styles.rowContainer}>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-          </div>
-          <div className ={styles.rowContainer}>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-          </div>
-        </div>
-      </div>
-      <div className ={styles.begin3Container}>
-        <div className ={styles.begin3Box}>
-          <div className ={styles.firstContainer}>
-           <div className ={styles.thirdText}>Spread your wide wrings at E-COPS</div>
-           <div className ={styles.third2Text}>@E_COPS</div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.beginContainer}>
-        <div className = {styles.beginBox}>
-          <div className ={styles.firstContainer}>
-            <div className ={styles.firstText}><br></br>E-COP'S------<br></br>Challenger Track</div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.begin2Container}>
-        <div className = {styles.begin2Box}>
-          <div className = {styles.secondContainer}>
-            <div className = {styles.secondText}>2022 Garallery</div>
-          </div>
-          <div className ={styles.rowContainer}>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-          </div>
-          <div className ={styles.rowContainer}>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-          </div>
-          <div className ={styles.rowContainer}>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-            <ProfileBox img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU'/>
-          </div>
-        </div>
-      </div>
-      <div className ={styles.begin3Container}>
-        <div className ={styles.begin3Box}>
-          <div className ={styles.firstContainer}>
-           <div className ={styles.thirdText}>Spread your wide wrings at E-COPS</div>
-           <div className ={styles.third2Text}>@E_COPS</div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.beginContainer}>
-        <div className = {styles.beginBox}>
-          <div className ={styles.firstContainer}>
-            <div className ={styles.ac1Text}><br></br>Web Hacking<br></br>Team!</div>
-             <div className ={styles.ac2Text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are</div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.begin2Container}>
-        <div className = {styles.begin2Box}>
-          <div className = {styles.secondContainer}>
-          </div>
-          <div className ={styles.rowContainer}></div>
-          <div className ={styles.rowContainer}></div>
-          <div className ={styles.rowContainer}></div>
-        </div>
-      </div>
-      <div className ={styles.begin3Container}>
-        <div className ={styles.begin3Box}>
-          <div className ={styles.firstContainer}>
-           <div className ={styles.thirdText}>Spread your wide wrings at E-COPS</div>
-           <div className ={styles.third2Text}>@E_COPS</div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.beginContainer}>
-        <div className = {styles.beginBox}>
-          <div className ={styles.firstContainer}>
-            <div className ={styles.ac1Text}><br></br>Reversing ---<br></br>Team!</div>
-             <div className ={styles.ac2Text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are</div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.begin2Container}>
-        <div className = {styles.begin2Box}>
-          <div className = {styles.secondContainer}>
-          </div>
-          <div className ={styles.rowContainer}></div>
-          <div className ={styles.rowContainer}></div>
-          <div className ={styles.rowContainer}></div>
-        </div>
-      </div>
-      <div className ={styles.begin3Container}>
-        <div className ={styles.begin3Box}>
-          <div className ={styles.firstContainer}>
-           <div className ={styles.thirdText}>Spread your wide wrings at E-COPS</div>
-           <div className ={styles.third2Text}>@E_COPS</div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.beginContainer}>
-        <div className = {styles.beginBox}>
-          <div className ={styles.firstContainer}>
-            <div className ={styles.ac1Text}><br></br>Forensic ----<br></br>Team!</div>
-             <div className ={styles.ac2Text}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are</div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.begin2Container}>
-        <div className = {styles.begin2Box}>
-          <div className = {styles.secondContainer}>
-          </div>
-          <div className ={styles.rowContainer}></div>
-          <div className ={styles.rowContainer}></div>
-          <div className ={styles.rowContainer}></div>
-        </div>
-      </div>
-      <div className ={styles.begin3Container}>
-        <div className ={styles.begin3Box}>
-          <div className ={styles.firstContainer}>
-           <div className ={styles.thirdText}>Spread your wide wrings at E-COPS</div>
-           <div className ={styles.third2Text}>@E_COPS</div>
-          </div>
-        </div>
-      </div>
+
     </main>
 
     {/* bottom bars */}
