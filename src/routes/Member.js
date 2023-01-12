@@ -129,7 +129,7 @@ function Member(){
     </footer>
     </>
     :
-    <span>Your screen is too small</span>
+    <span>화면 크기를 조정해주세요.</span>
     }
     </body>
   );
