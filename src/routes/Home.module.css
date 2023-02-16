@@ -5,9 +5,6 @@
     border-bottom: 1px solid #33423E;
 }
 
-.mainCenter{
-  align-items: center;
-}
 
 .photo{
     height: 300px;
@@ -18,7 +15,7 @@
 }
 
 .titleText {
-    font-size: 75px;
+    font-size: 85px;
     font-weight: bold;
     padding: 10px;
     color: white;
@@ -26,8 +23,7 @@
   }
 
   .titleTextMobile {
-    font-size: 55px;
-    margin-left: 50px;
+    font-size: 50px;
     font-weight: bold;
     padding: 10px;
     color: white;
@@ -48,7 +44,6 @@
   color: white;
   padding-top: 120px;
   display: inline-block;
-
 }
 
 .midTextButton{
@@ -69,7 +64,7 @@
 }
 
 .descriptionTextMobile{
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px;
   color: white;
   display: inline-block;
@@ -87,7 +82,7 @@
   .rowContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 1000px;
     height: auto;
     padding: 15px;
@@ -101,11 +96,23 @@
     display: flex;
   }
 
+  .mainColumnContainer{
+    align-items: center;
+  }
+
   .columnContainer{
     width: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    height: 400px;
+  }
+
+  .mainColumnContainer{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 400px;
   }
 
@@ -113,9 +120,17 @@
     width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 400px;
+    justify-content: center;
+    height: auto;
   }
+
+.mainMobileContainer{
+  margin-left: 50px;
+  display: inline-block;
+  justify-content: space-between;
+  width: 1000px;
+  height: auto;
+}  
 
 .midColumnContainer{
     direction: column;

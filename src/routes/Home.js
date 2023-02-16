@@ -6,7 +6,7 @@ import logo from '../components/hspace.png';
 import { useMediaQuery } from 'react-responsive';
 
 function Home (){
-  const isTxtBar = useMediaQuery({minWidth: 1200})
+  const isTxtBar = useMediaQuery({minWidth: 1500})
   const isMobile = useMediaQuery({maxWidth: 1000});
   return (
     <body>
@@ -14,14 +14,27 @@ function Home (){
     <header>
       <NavBar/>
     </header>
-    <main className={`${styles.mainContainer} ${styles.mainCenter}`}>
+
+    <main className={`${styles.mainContainer}`}>
       <div style={{width: '100%', display:'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
       <div className={styles.rowContainer}>
-        <div className={styles.columnContainer}>
+        <div className={`${styles.columnContainer}`}>
           {isMobile?
           <>
-          <text className={styles.titleTextMobile}>WE STAN</text>
-          <text className={styles.titleTextMobile}>CYBER SECURITY</text>
+          <div className={styles.mainMobileContainer}>
+            <div className={styles.columnContainerMobile}>
+              <text className={styles.titleTextMobile}>WE STAN</text>
+              <text className={styles.titleTextMobile}>CYBER SECURITY</text>
+            </div>
+            <div className={styles.columnContainerMobile}>
+              <text className={styles.descriptionTextMobile}>
+                E-COPS는 보안을 공부하고 싶은 학생이라면 누구나 참여할 수 있는 이화여자대학교 교내 동아리입니다.
+              </text>
+              <text className={styles.descriptionTextMobile}>
+                 E-COPS is a cybersecurity club at Ewha Womans University, and anyone who has a passion for security can participate.
+              </text>
+            </div>
+          </div>
           </>
           :
           <>
@@ -30,17 +43,8 @@ function Home (){
           </>
           }
         </div>
-
-          {isMobile?
+        {isMobile?
           <>
-          <div className={styles.columnContainerMobile}>
-          <text className={styles.descriptionTextMobile}>
-          E-COPS는 보안을 공부하고 싶은 학생이라면 누구나 참여할 수 있는 이화여자대학교 교내 동아리입니다.
-          </text>
-          <text className={styles.descriptionTextMobile}>
-            E-COPS is a cybersecurity club at Ewha Womans University, and anyone who has a passion for security can participate.
-          </text>
-          </div>
           </>
           :
           <>
@@ -82,7 +86,8 @@ function Home (){
         </>
         }
       </div>
-
+  
+        
       
 
       <div className={`${styles.midColumnContainer} ${styles.background}`}>
@@ -219,7 +224,6 @@ function Home (){
               🔒포렌식은 E-COPS에서.  
               🔒리버싱은 E-COPS에서.
               🔒개발은 E-COPS에서. 
-              🔒암호학은 E-COPS에서. 
             </text>
           </div>
       :
