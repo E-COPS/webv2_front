@@ -308,6 +308,15 @@
   width: 1700px;
 }
 
+.scrollRowContainer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100vw - 480px);
+  height: auto;
+  padding: 15px;
+}
 
 .scroll_container {
   margin-top: 100px;
@@ -324,7 +333,7 @@
   text-align: right;
   color: white;
   margin-top: 1px;
-  width: 1500px;
+  width: 100vw;
   justify-content: space-between;
 
   /* animation properties */

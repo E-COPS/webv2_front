@@ -212,13 +212,14 @@ function Home (){
 
       
       {isTxtBar?
-            <div className={`${styles.scroll_container} ${styles.rowContainer}`}>
+            <div className={`${styles.scrollRowContainer}`}>
             <text className={styles.scroll_text}>
               🔒암호학은 E-COPS에서. 
               🔒웹 해킹은 E-COPS에서.  
               🔒포렌식은 E-COPS에서.  
               🔒리버싱은 E-COPS에서.
               🔒개발은 E-COPS에서. 
+              🔒암호학은 E-COPS에서. 
             </text>
           </div>
       :
