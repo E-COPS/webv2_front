@@ -53,8 +53,11 @@ function Home() {
                   </>
                 ) : (
                   <>
-                    <text className={styles.titleText}>WE STAN</text>
-                    <text className={styles.titleText}>CYBER SECURITY</text>
+                    <text className={styles.titleText}>
+                      <p>WE STAN</p>
+                      <p>CYBER</p>
+                      <p>SECURITY</p>
+                    </text>
                   </>
                 )}
               </div>
