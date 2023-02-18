@@ -6,7 +6,7 @@ import logo from '../components/hspace.png';
 import { useMediaQuery } from 'react-responsive';
 
 function Home() {
-  const isTxtBar = useMediaQuery({ minWidth: 1500 });
+  const isTxtBar = useMediaQuery({ minWidth: 1500 }); // 하단 애니메이션
   const isMobile = useMediaQuery({ maxWidth: 1000 });
   return (
     <body>
@@ -32,7 +32,9 @@ function Home() {
                     <div className={styles.mainMobileContainer}>
                       <div className={styles.columnContainerMobile}>
                         <text className={styles.titleTextMobile}>
-                          WE STAN <p /> CYBER SECURITY
+                          <p>WE STAN</p>
+                          <p>CYBER</p>
+                          <p>SECURITY</p>
                         </text>
                       </div>
                       <div className={styles.columnContainerMobile}>
@@ -53,11 +55,13 @@ function Home() {
                   </>
                 ) : (
                   <>
-                    <text className={styles.titleText}>
-                      <p>WE STAN</p>
-                      <p>CYBER</p>
-                      <p>SECURITY</p>
-                    </text>
+                    <div className={styles.titleTextBox}>
+                      <text className={styles.titleText}>
+                        <p>WE STAN</p>
+                        <p>CYBER</p>
+                        <p>SECURITY</p>
+                      </text>
+                    </div>
                   </>
                 )}
               </div>
