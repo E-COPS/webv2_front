@@ -53,6 +53,7 @@
       width: 100%;
       height: auto;
       margin-bottom: 50px;
+      
     }
 
     .secondText{
@@ -119,65 +120,64 @@
   color: #E3E8ED;
   }
 
-  /* .ac1Text{
-  position: absolute;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 96px;
-  line-height: 116px;
-  float:left;
-  
-  color: #E3E8ED;
-  
-  text-shadow: -8px 8px 16px rgba(0, 0, 0, 0.25);
-  
-  
-  }
-  .ac2Text{
-  position: absolute;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 590Px;
-  
-  color: #E3E8ED;
-  text-shadow: -8px 8px 16px rgba(0, 0, 0, 0.25);
-  } */
   /*작은화면*/
   @media screen and (max-width:1000px) {
     .mainContainer {
       padding: 20px;
       padding-top: 10px;
     }
+
+    .beginContainer{
+      padding-top: 100px;
+      padding-bottom: 0px;
+    }
+
     .firstText {
       font-size: 48px;
       position: relative;
       transform: translate(0%, -20%);
       border:none;
     }
+    .galleryContainer{
+      padding:30px;
+      width: 100%;
+      height: 80vh;
+      }
+
+    .text2Box{
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      align-items: center;
+    }
     .secondText {
       font-size: 24px;
     }
+
+    .text3Box{
+      padding:100px;
+      margin-top:10px;
+      height: 0vh;
+      width: 100%;
+    }
+
     .thirdText{
       font-size: 32px;
-      }
+    }
       
-      .third2Text{
+    .third2Text{
       font-size: 7px;
-      
-      }
-      .ac1Text{
+     }
+    .ac1Text{
       font-size: 48px;
-      }
-      .ac2Text{
+    }
+    .ac2Text{
       font-size: 32px;
-      }
+     }
 
     .begin2Container{
       transform: translate(0%, 0%);
-      }
+    }
 
   }
 
@@ -186,17 +186,29 @@
       padding: 20px;
       padding-top: 10px;
     }
+
+    
+    .beginContainer{
+      padding-top: 30px;
+      padding-bottom: 0px;
+    }
     .firstText {
       font-size: 36px;
       position: relative;
       transform: translate(0%, 0%);
       border:none;
     }
+
+    .galleryContainer{
+      padding:10px;
+      width: 100%;
+      height: 80vh;
+    }
     .secondText {
       font-size: 18px;
     }
     .thirdText{
-      font-size: 22px;
+      font-size: 24px;
     }
       
     .third2Text{
@@ -211,7 +223,6 @@
     }
 
     .beginBox{
-      /* background-color: #E5E5E5; */
       justify-content: center;
       height: 100%;
       width: 100%;
@@ -220,9 +231,17 @@
 
     .begin2Container{
       transform: translate(0%, -10%);
-      }
+    }
+
     .ac2Text{
       line-height: 585Px;
       
-      }
+    }
+
+    .text3Box{
+        margin-top: 20px;
+        padding:20px;
+        height: 0vh;
+        width: 100%;
+     }
   }
