@@ -17,22 +17,51 @@
 
 .rowContainer2{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: auto;
   flex-wrap: wrap;
+  /* width:40%; */
+  
 }
 
 .columnContainer{
   display: flex;
-  flex-direction: column;
-  align-items: space-evenly;
-  justify-content: space-evenly;
-  width: 1000px;
+  flex-direction: row;
+  justify-content: space-around;
+  /* width: 100%; */
   height: auto;
 }
 
+.columnQnaContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* width: 100%; */
+  height: auto;
+  flex-wrap: wrap;
+  width: 50rem;
+  /* margin: 4px 0; */
+  /* margin-bottom: ; */
+}
+
+.recruitPoster{
+  display:flex;
+  /* justify-content: center; */
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  padding-left: 3rem;
+  margin-right:-1rem;
+  margin-left:0px;
+  width: 60%;
+}
+
+.recruitPoster img{
+  width: 100%;
+  justify-content: baseline;
+  
+}
 .content3Container {
   display: flex;
   height: auto;
@@ -40,6 +69,7 @@
   justify-content: center;
   margin-top: 200px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 
@@ -124,7 +154,7 @@
 }
 
 .contentWhiteText {
-  font-size: 13px;
+  font-size: 15px;
   color: white;
   position: absolute;
   text-align: center;
@@ -147,7 +177,7 @@
 
 .contentText {
   display: flex;
-  font-size: 15px;
+  font-size: 18px;
   padding-top: 60px;
   color: white;
 }
@@ -170,6 +200,7 @@
   display: flex;
   flex-wrap: wrap;
   display: inline-block;
+  justify-content: center;
 }
 
 .midToggleButton{
@@ -181,7 +212,7 @@ margin-top:150px;
 .toggle{
 display: flex;
 flex-direction: column;
-margin: 15px 0px;
+margin: 20px 0px;
 border:2px solid #00D9A5;
 border-radius: 11px;
 width: 100%;
@@ -224,7 +255,7 @@ margin-top: 200px;
 
 .greenBox{
 height: 100%;
-width: 100%;
+width: 80%;
 background-color: #33423E;
 padding: 50px 0px;
 }
@@ -237,21 +268,26 @@ color: white;
 text-align: center;
 }
 .leftText{
-  text-align: left;
-  padding: 0px;
+  
 }
 .midContainer{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 width: 100%;
 height: auto;
 padding: bottom 20px;
+align-items: center;
+/* text-align: center; */
+
 
 }
 .contentText2 {
 font-size: 18px;
 padding: 30px;
+/* padding-left: 14rem; */
+justify-content: center;
+text-align: center;
 color: white;
 }
 
@@ -261,8 +297,23 @@ color : #00D9A5;
 border-color: #00D9A5;
 background-color: #3A3A3A;
 border-radius:0.5em;
-width:210px;
-height: 42px;
+width:250px;
+justify-content: center;
+height: 45px;
+}
+
+.qButton:hover{
+  color:#3A3A3A;
+  background-color: #00D9A5;
+  
+}
+a:hover{
+  color:#3A3A3A;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 .headerContainer{
 display: flex;
@@ -309,13 +360,17 @@ margin-bottom: 200px;
   justify-content: flex-start;
   align-items: center;
   background-color: transparent;
-  height: 200px;
+  height: auto;
   margin: 20px 0px;
   padding: 20px;
 }
 
 
-
+.qnaAnswer{
+  font-size: 18px;
+  padding: 0 30px;
+  line-height: 2rem;
+}
 
 
 
@@ -333,6 +388,7 @@ margin-bottom: 200px;
     justify-content: center;
     width: 100%;
     height: auto;
+    margin-left:-10px;
   }
   .columnContainer{
   display: flex;
@@ -342,13 +398,28 @@ margin-bottom: 200px;
   width: 100%;
   height: auto;
   padding: 5px;
+    flex-wrap: wrap;
 }
 .columnContainer2{
   width: 400px;
 }
+.recruitPoster{
+  /* margin: auto;
+  display: block;
+  align-items: center;
+  width:60%; */
+  display:flex;
+  justify-content: center;
+}
+
+.recruitPoster img{
+  width: 60%
+}
 .midText {
   font-size: 25px;
   margin-top: 10px;
+  text-align: left;
+  padding: 0px;
 }
 
 .divider {
@@ -431,7 +502,8 @@ color: white;
 }
 
 .contentBigText {
-font-size: 14px;
+font-size: 15px;
+font-weight: bold;
 padding: 0px 5px;
 color: white;
 }
@@ -445,6 +517,7 @@ display: inline-block;
 .contentText2 {
 font-size: 14px;
 padding: 30px;
+line-height: 15px;
 }
 .grayContainer{
 display: flex;
@@ -468,5 +541,15 @@ padding: 20px;
 .logoImg {
   width: 240px;
   height: 80px;
+}
+
+dialog::backdrop{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-color: rgba(0,0,0,0.8);
+  border:0;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 50px 10px 50px;
+
 }
 }
