@@ -16,9 +16,9 @@ function NavBar({ isWhite }) {
       className={styles.navStyle}
       style={{ backgroundColor: isWhite && '#E5E5E5' }}
     >
-      <Container className="px-0 align-items-center">
+      <Container className="align-items-center flex">
         {/* logo */}
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/" className="">
           <img src={logo} className={styles.logoImg} alt="e-cops" />
           {/* Hover effect */}
           {/* <img src={logo_hover} class="hover-logo" className={styles.logoImg} alt="ecops-hover" /> */}
