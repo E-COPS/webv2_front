@@ -17,22 +17,50 @@
 
 .rowContainer2{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: auto;
   flex-wrap: wrap;
+  /* width:40%; */
+  
 }
 
 .columnContainer{
   display: flex;
-  flex-direction: column;
-  align-items: space-evenly;
-  justify-content: space-evenly;
-  width: 1000px;
+  flex-direction: row;
+  justify-content: space-around;
+  /* width: 100%; */
   height: auto;
 }
 
+.columnQnaContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* width: 100%; */
+  height: auto;
+  flex-wrap: wrap;
+  /* margin: 4px 0; */
+  /* margin-bottom: ; */
+}
+
+.recruitPoster{
+  display:flex;
+  /* justify-content: center; */
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  padding-left: 3rem;
+  margin-right:-1rem;
+  margin-left:0px;
+  width: 60%;
+}
+
+.recruitPoster img{
+  width: 100%;
+  justify-content: baseline;
+  
+}
 .content3Container {
   display: flex;
   height: auto;
@@ -40,6 +68,7 @@
   justify-content: center;
   margin-top: 200px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 
@@ -147,7 +176,7 @@
 
 .contentText {
   display: flex;
-  font-size: 15px;
+  font-size: 18px;
   padding-top: 60px;
   color: white;
 }
@@ -170,6 +199,7 @@
   display: flex;
   flex-wrap: wrap;
   display: inline-block;
+  justify-content: center;
 }
 
 .midToggleButton{
@@ -181,7 +211,7 @@ margin-top:150px;
 .toggle{
 display: flex;
 flex-direction: column;
-margin: 15px 0px;
+margin: 20px 0px;
 border:2px solid #00D9A5;
 border-radius: 11px;
 width: 100%;
@@ -224,7 +254,7 @@ margin-top: 200px;
 
 .greenBox{
 height: 100%;
-width: 100%;
+width: 80%;
 background-color: #33423E;
 padding: 50px 0px;
 }
@@ -308,13 +338,17 @@ margin-bottom: 200px;
   justify-content: flex-start;
   align-items: center;
   background-color: transparent;
-  height: 200px;
+  height: auto;
   margin: 20px 0px;
   padding: 20px;
 }
 
 
-
+.qnaAnswer{
+  font-size: 18px;
+  padding: 0 30px;
+  line-height: 2rem;
+}
 
 
 
@@ -332,6 +366,7 @@ margin-bottom: 200px;
     justify-content: center;
     width: 100%;
     height: auto;
+    margin-left:-10px;
   }
   .columnContainer{
   display: flex;
@@ -341,7 +376,7 @@ margin-bottom: 200px;
   width: 100%;
   height: auto;
   padding: 5px;
-
+    flex-wrap: wrap;
 }
 .columnContainer2{
   width: 400px;
@@ -445,7 +480,8 @@ color: white;
 }
 
 .contentBigText {
-font-size: 14px;
+font-size: 15px;
+font-weight: bold;
 padding: 0px 5px;
 color: white;
 }
@@ -459,6 +495,7 @@ display: inline-block;
 .contentText2 {
 font-size: 14px;
 padding: 30px;
+line-height: 15px;
 }
 .grayContainer{
 display: flex;
