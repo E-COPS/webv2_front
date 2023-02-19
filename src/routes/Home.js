@@ -6,7 +6,7 @@ import logo from '../components/hspace.png';
 import { useMediaQuery } from 'react-responsive';
 
 function Home() {
-  const isTxtBar = useMediaQuery({ minWidth: 1500 }); // 하단 애니메이션
+  const isTxtBar = useMediaQuery({ minWidth: 1200 }); // 하단 애니메이션
   const isMobile = useMediaQuery({ maxWidth: 1000 });
   return (
     <body>

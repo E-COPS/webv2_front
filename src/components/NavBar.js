@@ -3,6 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../images/logo-img.png';
 import logo_hover from '../images/logo-green-img.png';
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 import { FiMenu } from 'react-icons/fi';
 import styles from './NavBar.module.css';
@@ -30,18 +32,22 @@ function NavBar({ isWhite }) {
         {/* menu */}
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto align-items-center">
-            <Nav.Link className={styles.navText} href="/program">
+            <NavLink
+              className={styles.navText}
+              // style={({ isActive }) => (isActive ? styles.activeStyle : {})}
+              href="/program"
+            >
               PROGRAM
-            </Nav.Link>
-            <Nav.Link className={styles.navText} href="/member">
+            </NavLink>
+            <NavLink className={styles.navText} href="/member">
               MEMBER
-            </Nav.Link>
-            <Nav.Link className={styles.navText} href="/activity">
+            </NavLink>
+            <NavLink className={styles.navText} href="/activity">
               ACTIVITY
-            </Nav.Link>
-            <Nav.Link className={styles.navText} href="/recruitment">
+            </NavLink>
+            <NavLink className={styles.navText} href="/recruitment">
               RECRUITMENT
-            </Nav.Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

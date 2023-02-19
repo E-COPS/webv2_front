@@ -23,9 +23,16 @@
   margin: 0px 10px;
 }
 
+.active{
+  background-color: #00D9A5;
+}
 .navText:visited{
   /* color: #1A1C1D; */
   background-color: #00D9A5;
+}
+.activeStyle {
+  color:#00D9A5;
+  background-color: #1A1C1D;
 }
 
 /* .navText:hover:not(.active){
