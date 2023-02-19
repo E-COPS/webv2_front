@@ -5,7 +5,6 @@
     border-bottom: 1px solid #33423E;
 }
 
-
 .photo{
     height: 300px;
     width: 400px;
@@ -15,7 +14,7 @@
 }
 
 .titleTextBox{
-  width: 
+  width: auto;
 }
 
 .titleText {
@@ -29,7 +28,7 @@
 
 .titleText p {
   border-right: .15em solid orange;
-  font-family: "Courier";
+  font-family: "Ewha";
   font-size: 85px;
   white-space: nowrap;
   overflow: hidden;
@@ -272,13 +271,19 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    margin:auto;
+    height:50rem;
+    margin-top: 10rem;
+
 }
 
 .introTitleContainer{
     font-size: 60px;
     font-weight: bold;
     color: white;
-    padding-top: 250px;
+    margin-top: 1rem;
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,13 +300,22 @@
   justify-content: center;
 }
 .introContainer{
-    font-size: 20px;
-    color: white;
-    padding: 10px;
+    border-radius: 35px;
+    font-size: 21px;
+    color: rgb(0, 0, 0);
+    padding: 90px;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    line-height: 35px;
+    letter-spacing: 3px;
+    background-color: rgba(180,180,180,0.7);
+    width:56rem;
+    height: 100%;
+    margin-top: 3rem;
+    font-family: 'Ewha',serif;
 }
 .introContainerMobile{
   font-size: 17px;
@@ -317,10 +331,10 @@
 
 
 .background{
-    background-image: url('../components/ewha_logo.png');
+    background-image: url('../images/ewha_symbol.png');
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 30%;
+    background-position:center 14rem;
+    background-size: 35%;
 }
 
 .historyTitleText {

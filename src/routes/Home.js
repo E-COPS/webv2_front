@@ -47,7 +47,7 @@ function Home() {
                           동아리입니다.
                         </text>
                         <text className={styles.descriptionTextMobile}>
-                          E-COPS is a cybersecurity club at Ewha Womans University, and anyone who has a passion for
+                          E-COPS is a cyber security club at Ewha Womans University, and anyone who has a passion for
                           security can participate.
                         </text>
                       </div>
@@ -109,12 +109,10 @@ function Home() {
               <>
                 <text className={styles.introTitleContainerMobile}>E-COPS는 이런 동아리야</text>
                 <text className={styles.introContainerMobile}>
-                  E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다. E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는
-                  전공과 상관없이 보안에 대해 공부하고 싶은 학생들의 자발적인 스터디로부터 시작하여, 경력개발센터에 우수
-                  동아리로 이름을 올렸으며 인재개발원 커리어클럽에 소속되어 활발할 활동을 펼쳐가고 있는 정보보안
-                  동아리입니다. E-COPS는 외부 보안 연합 IncogNITO와 SUA, hspace에 소속되어 있어 외부 프로젝트를 진행하고
-                  컨퍼런스에 참가하는 등 다양한 보안 관련 활동을 해오고 있습니다. 1년 이상 활동을 하신 부원은
-                  활동증명서를 발급 받을 수 있습니다.
+                  E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는 이화여대 학생이라면 누구나 참여할 수 있는 이화여자대학교
+                  대표 사이버 보안 동아리입니다. 함께 정보 보안을 공부하며 보안 전문가로 성장해 나가는 것을 목표로 하고
+                  있습니다. 경력 개발 센터 우수 동아리에 이름을 올렸으며, 현재 인재 개발원 커리어클럽, 보안 연합
+                  IncogNITO, SUA, hspace에 소속되어 내/외부적으로 활발하게 활동을 이어 나가고 있습니다.
                 </text>
                 {/* <text className={styles.introContainerMobile}>
                   사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.
@@ -146,7 +144,17 @@ function Home() {
               </>
             ) : (
               <>
-                <text className={styles.introTitleContainer}>E-COPS는 이런 동아리야</text>
+                <text className={styles.introTitleContainer}>E-COPS를 소개합니다!</text>
+                <text className={styles.introContainer}>
+                  E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는 <br />
+                  이화여대 학생이라면 누구나 참여할 수 있는 이화여자대학교 대표 <br />
+                  사이버보안 동아리입니다. <br />
+                  함께 정보 보안을 공부하며 보안 전문가로 성장해 나가는 것을 목표로 하고 있습니다.
+                  <br /> E-COPS는 이화여대 경력개발센터 우수 동아리에 이름을 올렸으며, 현재 이화여자대학교 인재개발원
+                  커리어클럽, 보안 연합 커뮤니티 IncogNITO, SUA, hspace에 소속되어 내/외부적으로 활발하게 활동을 이어
+                  나가고 있습니다.
+                </text>
+                {/* <text className={styles.introContainer}>사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.</text>
                 <text className={styles.introContainer}>E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.</text>
                 <text className={styles.introContainer}>사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.</text>
                 <text className={styles.introContainer}>E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.</text>
@@ -154,9 +162,7 @@ function Home() {
                 <text className={styles.introContainer}>E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.</text>
                 <text className={styles.introContainer}>사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.</text>
                 <text className={styles.introContainer}>E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.</text>
-                <text className={styles.introContainer}>사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.</text>
-                <text className={styles.introContainer}>E-COPS는 사이버 보안을 주도하는 이화여대의 동아리입니다.</text>
-                <text className={styles.introContainer}>사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.</text>
+                <text className={styles.introContainer}>사이버 보안을 이끄는 인재로 발전하는 것을 목표로 합니다.</text> */}
               </>
             )}
           </div>
