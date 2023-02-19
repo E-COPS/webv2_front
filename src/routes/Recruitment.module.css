@@ -41,6 +41,7 @@
   /* width: 100%; */
   height: auto;
   flex-wrap: wrap;
+  width: 50rem;
   /* margin: 4px 0; */
   /* margin-bottom: ; */
 }
@@ -153,7 +154,7 @@
 }
 
 .contentWhiteText {
-  font-size: 13px;
+  font-size: 15px;
   color: white;
   position: absolute;
   text-align: center;
@@ -271,16 +272,22 @@ text-align: center;
 }
 .midContainer{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 width: 100%;
 height: auto;
 padding: bottom 20px;
+align-items: center;
+/* text-align: center; */
+
 
 }
 .contentText2 {
 font-size: 18px;
 padding: 30px;
+/* padding-left: 14rem; */
+justify-content: center;
+text-align: center;
 color: white;
 }
 
@@ -290,8 +297,23 @@ color : #00D9A5;
 border-color: #00D9A5;
 background-color: #3A3A3A;
 border-radius:0.5em;
-width:210px;
-height: 42px;
+width:250px;
+justify-content: center;
+height: 45px;
+}
+
+.qButton:hover{
+  color:#3A3A3A;
+  background-color: #00D9A5;
+  
+}
+a:hover{
+  color:#3A3A3A;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 .headerContainer{
 display: flex;
@@ -519,5 +541,15 @@ padding: 20px;
 .logoImg {
   width: 240px;
   height: 80px;
+}
+
+dialog::backdrop{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-color: rgba(0,0,0,0.8);
+  border:0;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 50px 10px 50px;
+
 }
 }

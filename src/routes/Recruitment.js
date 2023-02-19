@@ -2,6 +2,7 @@ import NavBar from '../components/NavBar';
 import BottomBar from '../components/BottomBar';
 import styles from './Recruitment.module.css';
 import Button from '../components/Recruitment_Button';
+import sendEmail, { SendEmail } from '../components/sendEmail';
 import logo from '../images/logo-img.png';
 /*import { Button } from 'bootstrap';*/
 /*import toggleButton from '../components/Toggle_Button';*/
@@ -17,9 +18,12 @@ function Recruitment() {
   const button = document.querySelector('button');
   const dialog = document.querySelector('dialog');
 
-  button.addEventListener('click', () => {
-    dialog.showModal();
-  });
+  // button.addEventListener('click', () => {
+  //   dialog.showModal();
+  // });
+  // dialog.addEventListener('close', () => {
+  //   console.log(dialog.returnValue);
+  // });
   return (
     <body>
       {isNormal ? (
@@ -176,10 +180,21 @@ function Recruitment() {
                       노션 확인 후, 동아리 활동, 리크루팅 등에 대한 <br />
                       궁금한 점이 있다면 언제든지 문의주세요.
                     </text>
+                    <text className={styles.contentText2}>
+                      - 이메일: ewha.ecops@gmail.com <br />- 인스타그램: @ecops_ewha
+                    </text>
                   </div>
                   <div className={styles.midContainer}>
-                    <button className={styles.qButton}>문의하기</button>
-                    <dialog></dialog>
+                    <button className={styles.qButton}>
+                      <a
+                        href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ewha.ecops@gmail.com"
+                        target="_blank"
+                      >
+                        이메일로 문의하기
+                      </a>
+                    </button>
+                    {/* <dialog><sendEmail /></dialog> */}
+                    {/* <SendEmail /> */}
                   </div>
                 </div>
               </div>
