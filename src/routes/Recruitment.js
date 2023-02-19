@@ -57,7 +57,7 @@ function Recruitment() {
                   <text className={styles.contentText}>
                     E-COPS에서 12기 신입 부원을 모집합니다.<br></br>
                     보안에 관심이 많고 열정이 넘치는<br></br>
-                    이화여대 재학생 누구나 지원 가능!!
+                    이화여대 학부생 누구나 지원 가능!!
                   </text>
                   <div className={styles.midTextButton}>
                     <Button />

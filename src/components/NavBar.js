@@ -32,22 +32,22 @@ function NavBar({ isWhite }) {
         {/* menu */}
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto align-items-center">
-            <NavLink
+            <Nav.Link
               className={styles.navText}
               // style={({ isActive }) => (isActive ? styles.activeStyle : {})}
               href="/program"
             >
               PROGRAM
-            </NavLink>
-            <NavLink className={styles.navText} href="/member">
+            </Nav.Link>
+            <Nav.Link className={styles.navText} href="/member">
               MEMBER
-            </NavLink>
-            <NavLink className={styles.navText} href="/activity">
+            </Nav.Link>
+            <Nav.Link className={styles.navText} href="/activity">
               ACTIVITY
-            </NavLink>
-            <NavLink className={styles.navText} href="/recruitment">
+            </Nav.Link>
+            <Nav.Link className={styles.navText} href="/recruitment">
               RECRUITMENT
-            </NavLink>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

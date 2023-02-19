@@ -381,18 +381,28 @@
   height: 1349px;
   /* position: absolute; */
   margin-bottom: 16.2px;
+  margin-right: 5px;
 }
 
 .historyYear{
   color: rgba(0, 217, 165, 1);
   font-size: 45px;
   font-weight: bold;
-  margin-left: 0px;
+  margin-left: -5px;
   display: flex;
   /* text-shadow: 5px 0px 2px rgb(2, 150, 115); */
   /* position: absolute; */
   left: 0px;
   top: 10px;
+  flex-direction: column;
+}
+
+.historyContent{
+  color:white;
+  font-size: 20px;
+  margin-left: 50px;
+  font-weight:400;
+  margin-top: 10px;
 }
 .historyYearMobile{
   color: rgba(0, 217, 165, 1);
@@ -410,7 +420,7 @@
 .histDescriptContainer{
   color: white;
   margin-left: 70px;
-  position: absolute;
+  /* position: absolute; */
   left: 0px;
   top: 10px;
 }
@@ -422,9 +432,10 @@
   flex: 1;
   flex-direction: column;
   margin-left: 200px;
-  border-left: solid 7px rgb(2, 150, 115);
+  border-left: solid 7px rgb(0, 217, 165, 1);
   /* position:relative; */
-  height: 1050px;
+  /* height: 1050px; */
+  height: auto;
   justify-content: space-between;
   width: 1000px;
 }
@@ -474,12 +485,15 @@
 .hSpace{
   padding: 50px;
   margin-left: 300px;
+  justify-content: center;
+  width: 20rem;
 }
 
 .hSpaceCenter{
   color: white;
   display: flex;
   -ms-flex-align: center;
+  justify-content: center;
   width: 170px;
   height: auto;
 }
@@ -503,7 +517,7 @@
   background-color: rgba(51, 66, 62, 1);
   height: 20rem;
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
   justify-content: space-between;
   width: 100%;
   position: relative;

@@ -224,10 +224,121 @@ function Home() {
                 <text className={styles.historyTitleText}>지금까지 E-COPS는?</text>
                 <box className={styles.histColumnContainer}>
                   {/* <div className={styles.historyBar}></div> */}
-                  <text className={styles.historyYear} style={{ top: 0 }}>
-                    History
-                  </text>
-                  <text className={styles.historyYear} style={{ top: 80 }}>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>History</text>
+                    <text className={styles.historyContent}></text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2023 : YOU KNOW THE DRILL</text>
+                    <text className={styles.historyContent}></text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2022</text>
+                    <text className={styles.historyContent}>
+                      <ul>
+                        <li>2022 Summer Polygon BUIDL IT Pool Prize</li>
+                        <li>2022 Consensus Web3athon Prasaga - 1st prize</li>
+                        <li>E-COPS & EVI$ION 여름 보안 연합 학술제</li>
+                        <li>AI Computer 버그바운티 with 이화체인</li>
+                      </ul>
+                    </text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2021</text>
+                    <text className={styles.historyContent}>
+                      <ul>
+                        <li>2021 WISET ICT 팀프로젝트 결과발표대회 우수상</li>
+                        <li>2제 9회 K-HACKATHON 우수상</li>
+                        <li>한국정보기술학회 추계 대학생 논문 경진 대회 우수논문상</li>
+                        <li>한국 무역 협회 스타트업 스토리텔링 경진대회 대상</li>
+                        <li>제 8회 소프트웨어 개발보안 경진대회 우수상</li>
+                        <li>2021 TAEBIT Global Defi Online HACKATHON 3등</li>
+                        <li>2021 제 2회 성남시 여성 창업경진대회 0수상</li>
+                        <li>2021 개인정보가명익명 처리기술 경진대회 대상</li>
+                        <li>개인정보보호기술 아이디어 공모전 최우수상</li>
+                        <li>사이버보안 AI 빅데이터 활용경진대회 2021 최우수상</li>
+                        <li>2021 제 17회 경영혁신연구논문 및 사례연구 대학(원)생 공모전 장려상</li>
+                        <li>클러스터링을 이용한 이더리움 기반 스탬 코인 탐지 연구</li>
+                      </ul>
+                    </text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2020</text>
+                    <text className={styles.historyContent}>
+                      <ul>
+                        <li>추계학술대회 대학생 논문/졸업작품 공모전 우수상</li>
+                        <li>2020 스마트시티 서비스 아이디어 공모전 우수상</li>
+                        <li>이화여대 SW 창업 경진대회 대상</li>
+                        <li>이화여대 캡스톤 디자인 경진대회 대상</li>
+                        <li>강서구 스마트도시 아이디어 공모전 장려상</li>
+                      </ul>
+                    </text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2019</text>
+                    <text className={styles.historyContent}>
+                      <ul>
+                        <li>SW챌린지 공모전 수상</li>
+                        <li>개인정보보호 정책 아이디어 공모전 한국 인터넷 진흥원장상</li>
+                        <li>소프트웨어 개발보안 경진대회 정보보호학회장상</li>
+                        <li>제 3회 서울혁신챌린지 챌린지상</li>
+                        <li>K-사이버 시큐리티 챌린지 2019 자동차용 침입탐지트랙 장려상</li>
+                      </ul>
+                    </text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2018</text>
+                    <text className={styles.historyContent}>
+                      <ul>
+                        <li>이화여대 2018 캡스톤디자인 경진대화 수상</li>
+                        <li>IncogNITO 최우수상</li>
+                        <li>2018 Power of XX Award 1등</li>
+                      </ul>
+                    </text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2017</text>
+                    <text className={styles.historyContent}>
+                      <ul>
+                        <li>IncogNITO 우수상</li>
+                      </ul>
+                    </text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2016</text>
+                    <text className={styles.historyContent}>
+                      <ul>
+                        <li>LEAP 우수상</li>
+                      </ul>
+                    </text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2015</text>
+
+                    <text className={styles.historyContent}>
+                      <ul>
+                        <li>전국 학생 포트폴리오 경진대회 동상</li>
+                        <li>한마음 엑스포 2015</li>
+                        <li>국가보안기술연구소 암호 기술</li>
+                        <li>2015 캠퍼스 특허전략 유니버사이드 대회 우수상</li>
+                        <li>한국 멀티미디어 학회 우수 논문상</li>
+                        <li>EWHA 3D 프린팅을활용한 모델링 출력 경진대회 도전상</li>
+                      </ul>
+                    </text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>2014: The Beginning of E-COPS</text>
+                    <text className={styles.historyContent}>
+                      <ul>
+                        <li>국가암호 공모전 장려상</li>
+                        <li>KBWA 프로젝트 은상</li>
+                      </ul>
+                    </text>
+                  </div>
+                  <div className={styles.historyYear}>
+                    <text className={styles.historyTitle}>E-COPS Footstep</text>
+                  </div>
+                  {/* <text className={styles.historyYear} style={{ top: 80 }}>
                     2023 : YOU KNOW THE DRILL.
                   </text>
                   <text className={styles.historyYear} style={{ top: 160 }}>
@@ -262,7 +373,7 @@ function Home() {
                   </text>
                   <text className={styles.historyYear} style={{ top: 960 }}>
                     E-COPS'S FOOTSTEP
-                  </text>
+                  </text> */}
                 </box>
               </>
             )}

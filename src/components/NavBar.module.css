@@ -6,9 +6,9 @@
     padding-top: 15px;
     padding-bottom: 10px;
 }
-*{
+/* *{
   font-family: 'Ewha';
-}
+} */
 /* 큰 화면 */
 @media screen and (min-width:1000px) {
   .navStyle {
@@ -26,7 +26,7 @@
 .active{
   background-color: #00D9A5;
 }
-.navText:visited{
+.navText:hover{
   /* color: #1A1C1D; */
   background-color: #00D9A5;
 }

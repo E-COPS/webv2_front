@@ -15,11 +15,11 @@ import Development from './routes/Development';
 
 // style 전체 적용
 const GlobalStyle = createGlobalStyle`
-  @font-face{
-    font-family:"Ewha";
-    src:
-    url("./fonts/ewha.ttf") format('truetype');
-  }
+  // @font-face{
+  //   font-family:"Ewha";
+  //   src:
+  //   url("./fonts/ewha.ttf") format('truetype');
+  // }
   @font-face {
     font-family: "Inter";
     src: url("./fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: #1A1C1D;
-    font-family: 'Ewha', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: white;
   }
 `;
