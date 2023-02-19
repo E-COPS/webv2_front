@@ -41,13 +41,17 @@ function Home() {
                         <text className={styles.descriptionTextMobile}>
                           {/* E-COPS는 보안을 공부하고 싶은 학생이라면 누구나 참여할 수 있는 이화여자대학교 교내
                           동아리입니다. 0*/}
-                          E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는 보안에 대해 공부하고 싶은 학생들의 자발적인
+                          E-COPS는 정보보안을 기초부터 시작하여 심화학습, 프로젝트를 통해 실력을 탄탄히 쌓아가고 싶은
+                          이대생이라면 누구나 참여할 수 있는 이화여자대학교 커리어클럽 소속 동아리입니다.
+                          {/* E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는 보안에 대해 공부하고 싶은 학생들의 자발적인
                           스터디로부터 시작하여 이화여자대학교 경력개발센터에 우수 동아리로 이름을 올렸으며,
                           이화여자대학교 인재개발원 커리어클럽에 소속되어 활발한 활동을 펼쳐가고 있는 정보보안
-                          동아리입니다.
+                          동아리입니다. */}
                         </text>
                         <text className={styles.descriptionTextMobile}>
-                          E-COPS is a cyber security club at Ewha Womans University, and anyone who has a passion for
+                          {/* E-COPS is a cyber security club at Ewha Womans University, and anyone who has a passion for
+                          security can participate. */}
+                          E-COPS is Cyber Security club at Ewha Womans University, and anyone with a passion for cyber
                           security can participate.
                         </text>
                       </div>
@@ -71,10 +75,11 @@ function Home() {
                 <>
                   <div className={styles.columnContainer}>
                     <text className={styles.descriptionText}>
-                      E-COPS는 보안을 공부하고 싶은 학생이라면 누구나 참여할 수 있는 이화여자대학교 교내 동아리입니다.
+                      E-COPS는 정보보안을 기초부터 시작하여 심화학습, 프로젝트를 통해 실력을 탄탄히 쌓아가고 싶은
+                      이대생이라면 누구나 참여할 수 있는 이화여자대학교 커리어클럽 소속 동아리입니다.{' '}
                     </text>
                     <text className={styles.descriptionText}>
-                      E-COPS is a cybersecurity club at Ewha Womans University, and anyone who has a passion for
+                      E-COPS is Cyber Security club at Ewha Womans University, and anyone with a passion for cyber
                       security can participate.
                     </text>
                   </div>
@@ -85,7 +90,7 @@ function Home() {
               <>
                 <text className={styles.midTextMobile}>EWHA - CONTROL OF PROGRAM SECURITY</text>
                 <div className={styles.midTextButtonMobile}>
-                  <a href="./Recruitment">
+                  <a href="./recruitment">
                     <Button />
                   </a>
                 </div>
@@ -95,7 +100,7 @@ function Home() {
                 <div className={styles.midRowContainer}>
                   <text className={styles.midText}>EWHA - CONTROL OF PROGRAM SECURITY</text>
                   <div className={styles.midTextButton}>
-                    <a href="./Recruitment">
+                    <a href="./recruitment">
                       <Button />
                     </a>
                   </div>
@@ -265,10 +270,14 @@ function Home() {
 
           {isTxtBar ? (
             <div className={`${styles.scrollRowContainer}`}>
-              <text className={styles.scroll_text}>
+              <marquee behavior="scroll" direction="left" loop="number" className={styles.scroll_text}>
                 🔒암호학은 E-COPS에서. 🔒웹 해킹은 E-COPS에서. 🔒포렌식은 E-COPS에서. 🔒리버싱은 E-COPS에서. 🔒개발은
                 E-COPS에서.
-              </text>
+              </marquee>
+              {/* <text className={styles.scroll_text}>
+                🔒암호학은 E-COPS에서. 🔒웹 해킹은 E-COPS에서. 🔒포렌식은 E-COPS에서. 🔒리버싱은 E-COPS에서. 🔒개발은
+                E-COPS에서.
+              </text> */}
             </div>
           ) : (
             <div></div>
