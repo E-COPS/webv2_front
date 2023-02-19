@@ -237,8 +237,7 @@ color: white;
 text-align: center;
 }
 .leftText{
-  text-align: left;
-  padding: 0px;
+  
 }
 .midContainer{
 display: flex;
@@ -342,13 +341,28 @@ margin-bottom: 200px;
   width: 100%;
   height: auto;
   padding: 5px;
+
 }
 .columnContainer2{
   width: 400px;
 }
+.recruitPoster{
+  /* margin: auto;
+  display: block;
+  align-items: center;
+  width:60%; */
+  display:flex;
+  justify-content: center;
+}
+
+.recruitPoster img{
+  width: 60%
+}
 .midText {
   font-size: 25px;
   margin-top: 10px;
+  text-align: left;
+  padding: 0px;
 }
 
 .divider {
