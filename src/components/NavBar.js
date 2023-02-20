@@ -26,6 +26,15 @@ function NavBar({ isWhite, isCurrent }) {
         {/* menu */}
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto align-items-center">
+            {isCurrent == 'home' ? (
+              <Nav.Link className={`${styles.navText} ${styles.navText__current}`} href="/">
+                HOME
+              </Nav.Link>
+            ) : (
+              <Nav.Link className={styles.navText} href="/">
+                HOME
+              </Nav.Link>
+            )}
             {isCurrent == 'program' ? (
               <Nav.Link className={`${styles.navText} ${styles.navText__current}`} href="/program">
                 PROGRAM
