@@ -1,73 +1,47 @@
 .navStyle {
-    background-color: #1A1C1D #e5e5e5;
-    position:fixed;
-    width:100%;
-    background-color: #1A1C1D;
-    padding-top: 15px;
-    padding-bottom: 10px;
+  background-color: #1A1C1D;
 }
-/* *{
-  font-family: 'Ewha';
-} */
+
+
 /* 큰 화면 */
 @media screen and (min-width:1000px) {
-  .navStyle {
-    height: 80px;
-  }
+.navStyle {
+  height: 80px;
+}
 }
 
 .navText {
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0px 10px;
+color: white;
+font-size: 15px;
+margin: 0px 10px;
 }
 
-.active{
-  background-color: #00D9A5;
-}
-.navText:hover{
-  /* color: #1A1C1D; */
-  background-color: #00D9A5;
-}
-.activeStyle {
-  color:#00D9A5;
-  background-color: #1A1C1D;
+.navText:hover {
+color: #00d9a5;
+font-weight: bold;
 }
 
-/* .navText:hover:not(.active){
-  color:#00D9A5;
-  background-color: #1A1C1D;
-} */
+.navText__current {
+color: #00d9a5;
+font-weight: bold;
+}
 
 .logoImg {
-  /* width: 13.5rem; */
-  width:auto;
-  height: 2.5rem;
-  margin-left: 10px;
+
+width: 140px;
+height: 32px;
+margin-left: 20px;
 }
 
-.hover-logo {
-  display:none;
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:99;
-}
-
-.logoImg:hover .hover-logo{
-  display:inline;
-}
 /* 작은 화면 */
 @media screen and (max-width:500px) {
-  .logoImg {
-    width: 13.5rem;
-    height: 3rem;
-  }
+.logoImg {
+  width: 100px;
+  height: 22px;
+}
 }
 
 .menuIcon {
-  font-size: 25px;
-  margin-top: -5px;
-  color: white;
+font-size: 25px;
+color: white;
 }
