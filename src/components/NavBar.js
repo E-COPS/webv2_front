@@ -35,7 +35,7 @@ function NavBar({ isWhite, isCurrent }) {
                 HOME
               </Nav.Link>
             )}
-            {isCurrent == 'program' ? (
+            {/* {isCurrent == 'program' ? (
               <Nav.Link className={`${styles.navText} ${styles.navText__current}`} href="/program">
                 PROGRAM
               </Nav.Link>
@@ -62,6 +62,7 @@ function NavBar({ isWhite, isCurrent }) {
                 ACTIVITY
               </Nav.Link>
             )}
+            */}
             {isCurrent == 'recruit' ? (
               <Nav.Link className={`${styles.navText} ${styles.navText__current}`} href="/recruitment">
                 RECRUITMENT
