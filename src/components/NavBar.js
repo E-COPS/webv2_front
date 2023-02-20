@@ -5,7 +5,7 @@ import logo from '../images/logo-img.png';
 import { FiMenu } from 'react-icons/fi';
 import styles from './NavBar.module.css';
 
-function NavBar({ isWhite, isCurrent, isCurrent }) {
+function NavBar({ isWhite, isCurrent }) {
   return (
     <Navbar
       collapseOnSelect

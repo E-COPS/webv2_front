@@ -8,9 +8,9 @@ import design from '../images/design-icon.png';
 import styles from './Member.module.css';
 import { useMediaQuery } from 'react-responsive';
 
-function Member(){
-  const isMobile = useMediaQuery({maxWidth: 1000});
-  const isNormal = useMediaQuery({minWidth: 319});
+function Member() {
+  const isMobile = useMediaQuery({ maxWidth: 1000 });
+  const isNormal = useMediaQuery({ minWidth: 319 });
   return (
     <body>
       {isNormal ? (
@@ -79,67 +79,70 @@ function Member(){
               </div>
             )}
 
-      {/* content - E-COPS Web-TF */}
-      {isMobile?
-      <div className={styles.contentContainer}>
-      <div style={{justifyContent: 'center'}}>
-        <TextBox text={'E-COPS Web-TF'}/>
-      </div>
-      <div className={styles.smallRowContainer}>
-        <ProfileBox big={true} text='고민지 남윤정 김하은' img={backend}/>
-      </div>
-      <div className={styles.smallRowContainer}>
-        <ProfileBox big={true} text='고민지 김유경 임영서 서아영 장하은' img={frontend}/>
-      </div>
-      <div className={styles.smallRowContainer}>
-        <ProfileBox big={true} text='이슬 이한선' img={design}/>
-      </div>
-      </div>
-      :
-      <div className={styles.contentContainer}>
-        <div style={{width: 1000,}}>
-          <TextBox text={'E-COPS Web-TF'}/>
-        </div>
-        <div className={styles.rowContainer}>
-          <ProfileBox big={true} text='고민지 남윤정 김하은' img={backend}/>
-          <ProfileBox big={true} text='고민지 김유경 임영서 서아영 장하은' img={frontend}/>
-          <ProfileBox big={true} text='이슬 이한선' img={design}/>
-        </div>
-      </div>
-      }
-      
+            {/* content - E-COPS Web-TF */}
+            {isMobile ? (
+              <div className={styles.contentContainer}>
+                <div style={{ justifyContent: 'center' }}>
+                  <TextBox text={'E-COPS Web-TF'} />
+                </div>
+                <div className={styles.smallRowContainer}>
+                  <ProfileBox big={true} text="고민지 남윤정 김하은" img={backend} />
+                </div>
+                <div className={styles.smallRowContainer}>
+                  <ProfileBox big={true} text="고민지 김유경 임영서 서아영 장하은" img={frontend} />
+                </div>
+                <div className={styles.smallRowContainer}>
+                  <ProfileBox big={true} text="이슬 이한선" img={design} />
+                </div>
+              </div>
+            ) : (
+              <div className={styles.contentContainer}>
+                <div style={{ width: 1000 }}>
+                  <TextBox text={'E-COPS Web-TF'} />
+                </div>
+                <div className={styles.rowContainer}>
+                  <ProfileBox big={true} text="고민지 남윤정 김하은" img={backend} />
+                  <ProfileBox big={true} text="고민지 김유경 임영서 서아영 장하은" img={frontend} />
+                  <ProfileBox big={true} text="이슬 이한선" img={design} />
+                </div>
+              </div>
+            )}
 
-      {/* content - Our Members */}
-      {isMobile?
-      <div className={styles.contentContainer}>
-      <div style={{justifyContent: 'center'}}>
-        <TextBox text={'Our Members'}/>
-      </div>
-      <div style={{justifyContent: 'center', height: 'auto', marginTop: 50, paddingLeft: 20}}>
-        <text className={styles.contentText}>member member member member member member member member member member member member member member</text>
-      </div>
-      </div>
-      :
-      <div className={styles.contentContainer}>
-      <div style={{width: 1000,}}>
-        <TextBox text={'Our Members'}/>
-      </div>
-      <div style={{width: 1000, height: 'auto', marginTop: 50}}>
-        <text className={styles.contentText}>member member member member member member member member member member member member member member</text>
-      </div>
-      </div>
-      }
-    </main>
+            {/* content - Our Members */}
+            {isMobile ? (
+              <div className={styles.contentContainer}>
+                <div style={{ justifyContent: 'center' }}>
+                  <TextBox text={'Our Members'} />
+                </div>
+                <div style={{ justifyContent: 'center', height: 'auto', marginTop: 50, paddingLeft: 20 }}>
+                  <text className={styles.contentText}>
+                    member member member member member member member member member member member member member member
+                  </text>
+                </div>
+              </div>
+            ) : (
+              <div className={styles.contentContainer}>
+                <div style={{ width: 1000 }}>
+                  <TextBox text={'Our Members'} />
+                </div>
+                <div style={{ width: 1000, height: 'auto', marginTop: 50 }}>
+                  <text className={styles.contentText}>
+                    member member member member member member member member member member member member member member
+                  </text>
+                </div>
+              </div>
+            )}
+          </main>
 
-    {/* bottom bars */}
-    <footer>
-      <NavBar className={styles.secondNavBar}/>
-      <BottomBar/>
-    </footer>
-    </>
-    :
-    <span>화면 크기를 조정해주세요.</span>
-    }
+          {/* bottom bars */}
+          <footer>
+            <NavBar className={styles.secondNavBar} />
+            <BottomBar />
+          </footer>
+        </>
+      ) : (
+        <span>화면 크기를 조정해주세요.</span>
+      )}
     </body>
   );
 }

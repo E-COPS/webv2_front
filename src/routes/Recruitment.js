@@ -5,14 +5,13 @@ import Button from '../components/Recruitment_Button';
 // import logo from '../images/logo-img.png';
 import poster from '../images/12th_recruit_poster.jpg';
 // import logo from '../images/logo-img.png';
-import poster from '../images/12th_recruit_poster.jpg';
 /*import { Button } from 'bootstrap';*/
 /*import toggleButton from '../components/Toggle_Button';*/
 import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-function Recruitment(){
-  const isNormal = useMediaQuery({minWidth: 319});
+function Recruitment() {
+  const isNormal = useMediaQuery({ minWidth: 319 });
   const [btnClick_1, setBtnClick_1] = useState(false);
   const [btnClick_2, setBtnClick_2] = useState(false);
   const [btnClick_3, setBtnClick_3] = useState(false);
@@ -188,15 +187,15 @@ function Recruitment(){
             </div>
           </main>
 
-    {/* bottom bars */}
-    <footer>
-      <NavBar/>
-      <BottomBar/>
-    </footer>
-    </>
-    :
-    <span>화면 크기를 조정해주세요.</span>
-    }
+          {/* bottom bars */}
+          <footer>
+            <NavBar />
+            <BottomBar />
+          </footer>
+        </>
+      ) : (
+        <span>화면 크기를 조정해주세요.</span>
+      )}
     </body>
   );
 }
