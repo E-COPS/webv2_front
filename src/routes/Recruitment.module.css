@@ -22,7 +22,7 @@
   align-items: flex-end;
   height: auto;
   flex-wrap: wrap;
-  margin-bottom: 200px;
+  margin-bottom: 10rem;
 }
 
 .columnContainer{
@@ -320,7 +320,11 @@ margin-bottom: 00px;
   padding: 20px;
 }
 
-
+.answerBox{
+  font-size: 1em;
+  text-align: left;
+  line-height: 2px;
+}
 
 
 
@@ -331,9 +335,14 @@ margin-bottom: 00px;
     padding: 20px;
     padding-top: 20px;
   }
-  .headerContainer {
-    width: 300px;
+  .headerContainer{
+    align-items: center;
+
   }
+  .headerContainer img{
+    width: 35rem;
+  }
+  
   .rowContainer2{
     display: flex;
     justify-content: center;
@@ -353,10 +362,21 @@ margin-bottom: 00px;
   width: 400px;
 }
 .midText {
-  font-size: 25px;
-  margin-top: 10px;
+  font-size: 2.75em;
+  font-weight: bold;
 }
 
+.contentText {
+  display: flex;
+  font-size: 1em;
+  padding-top: 60px;
+  color: white;
+  }
+  .answerBox{
+  font-size: 1em;
+  text-align: left;
+  line-height: 2px;
+}
 .divider {
 background-color: #C5C5C5;
 height: 2px;
@@ -380,7 +400,7 @@ align-items: center;
 width: 100%;
 height: auto;
 padding-left: 10px;
-
+flex-wrap: wrap;
 }
 
 .columnTextContainer{
@@ -422,13 +442,14 @@ transform: translate( -30%, -34% );
 
 }
 
-.contentText {
-display: flex;
-font-size: 12px;
-padding-top: 60px;
-color: white;
+.content3Container {
+  display: flex;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
 }
-
 
 .contentTitle2Text{
 font-size: 20px;
@@ -437,28 +458,32 @@ color: white;
 }
 
 .contentBigText {
-font-size: 14px;
+font-size: 1em;
+font-weight: bold;
 padding: 0px 5px;
 color: white;
 }
 
 
 .midTextButton{
-padding: 50px;
-display: inline-block;
+padding: 2em;
+width: 20rem;
+display: flex;
+text-decoration: none;
 }
 
 .contentText2 {
-font-size: 14px;
+font-size: 1em;
 padding: 30px;
 }
 .grayContainer{
 display: flex;
 justify-content: space-evenly;
 align-items: space-evenly;
-width: 100%;
+width: 90%;
 }
 .toggle {
+  width:80%;
 padding: 20px;
 }
 

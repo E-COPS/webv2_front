@@ -109,7 +109,7 @@ function Recruitment() {
                   {/* 버튼 클릭 여부에 따라 답변 text 렌더링*/}
                   {btnClick_1 ? (
                     <div className={styles.textBox}>
-                      <text style={{ fontSize: 18, lineHeight: 2 }}>
+                      <text className={styles.answerBox}>
                         동아리에서 보안을 열정적으로 성실하게 함께 공부하실 수 있는 분이라면 보안 왕초보라도 누구나
                         환영합니다! 비기너 트랙은 보안 기초 지식 학습을 목표로 하기 때문에 배경 지식이나 경험의 유무를
                         선발에 중점적으로 고려하지 않습니다. 중요한 것은 오로지 지원자님의 보안 공부에 대한 열정입니다.
@@ -128,7 +128,7 @@ function Recruitment() {
                   </button>
                   {btnClick_2 ? (
                     <div className={styles.textBox}>
-                      <text style={{ fontSize: 18 }}>
+                      <text className={styles.answerBox}>
                         학기말에 비기너 부원들의 수요조사를 받아서 가장 수요가 많은 두 분야를 다음 기수 챌린저 분야로
                         선정합니다. 12기의 경우 웹 해킹과 시스템 해킹의 수요가 가장 높아 12기 챌린저 분야로
                         선정되었습니다.
@@ -146,7 +146,7 @@ function Recruitment() {
                   </button>
                   {btnClick_3 ? (
                     <div className={styles.textBox}>
-                      <text style={{ fontSize: 18 }}>
+                      <text className={styles.answerBox}>
                         1년 [ (학기+방학) × 2 ] 이상 활동해야 수료증을 발급받을 수 있습니다. 비기너로 들어온 분들은
                         비기너 1학기+방학을 활동하면 다음 학기는 자동으로 챌린저로 1학기+방학동안 활동하게 됩니다.
                         챌린저로 들어온 분들은 챌린저로 1년 이상 활동해야 합니다.
