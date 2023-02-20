@@ -5,8 +5,9 @@ import ActivityButton from '../components/ActivityButton';
 import ProfileBox from '../components/ProfileBox';
 import { useMediaQuery } from 'react-responsive';
 
-function Activity() {
-  const isNormal = useMediaQuery({ minWidth: 319 });
+
+function Activity(){
+  const isNormal = useMediaQuery({minWidth: 319});
   return (
     <body>
       {isNormal ? (
@@ -99,15 +100,15 @@ function Activity() {
             </div>
           </main>
 
-          {/* bottom bars */}
-          <footer>
-            <NavBar />
-            <BottomBar />
-          </footer>
-        </>
-      ) : (
-        <span>화면 크기를 조정해주세요.</span>
-      )}
+    {/* bottom bars */}
+    <footer>
+      <NavBar/>
+      <BottomBar/>
+    </footer>
+    </> 
+    :
+    <span>화면 크기를 조정해주세요.</span>
+    }
     </body>
   );
 }

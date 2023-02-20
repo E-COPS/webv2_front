@@ -128,10 +128,10 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding : 10px 20px 0;
-  /* padding-left: 20px; */
-  /* margin-right: auto; */
-  margin-bottom: 0px;
+  padding-top: 30px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-bottom: 10px;
   background-color: #00D9A5;
   width: 220px;
   height: 200px;
@@ -147,7 +147,6 @@
 }
 
 .contentText{
-  margin-top: 10px;
   font-size: 15px;
 
 }

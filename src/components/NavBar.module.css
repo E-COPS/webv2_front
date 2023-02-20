@@ -1,5 +1,5 @@
 .navStyle {
-  background-color: #1A1C1D;
+    background-color: #1A1C1D;
 }
 
 
@@ -11,11 +11,13 @@
 }
 
 .navText {
-color: white;
-font-size: 15px;
-margin: 0px 10px;
+  color: white;
+  font-size: 15px;
+  margin: 0px 10px;
 }
 
+.navText:hover {
+  color: #00d9a5;
 .navText:hover {
 color: #00d9a5;
 font-weight: bold;

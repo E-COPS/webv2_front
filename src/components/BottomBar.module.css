@@ -1,14 +1,12 @@
 .navStyle {
   margin-top: 20px;
   background-color: #1A1C1D;
-  /* padding-bottom:3rem; */
 }
 
 /* 큰 화면 */
 @media screen and (min-width:1000px) {
   .navStyle {
     height: 100px;
-    /* margin-bottom: 4rem; */
   }
 }
 
