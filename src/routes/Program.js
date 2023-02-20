@@ -12,7 +12,7 @@ function Program(){
     {isNormal?
     <>
     <header>
-      <NavBar/>
+      <NavBar isCurrent={'program'}/>
     </header>
     <main className={styles.mainContainer}>
       {/* header */}
