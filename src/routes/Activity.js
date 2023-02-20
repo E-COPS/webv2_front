@@ -12,7 +12,7 @@ function Activity() {
       {isNormal ? (
         <>
           <header>
-            <NavBar />
+            <NavBar isCurrent={'activity'} />
           </header>
           <main className={styles.mainContainer}>
             <div className={styles.contentContainer}>
@@ -45,46 +45,53 @@ function Activity() {
                   학기중에 열심히 공부한 내용을 토대로 프로젝트를 통해 실전 경험을 키워보세요!
                 </text>
                 <div className={styles.rowContainer2}>
-                  <div className={styles.mintBox2}>
-                    <text className={styles.boxText}>Web Hacking</text>
-                    <text className={styles.boxContentText}>
-                      무슨 모의 해킹<br></br>웹 환경 구현하여 모의 해킹하기
-                    </text>
-                    <div className={styles.clickButton2}>
-                      <ActivityButton url="/Webhacking" />
+                  <text className={styles.rowContainer2Top}>E-COPS는 현재 2022 겨울 방학 프로젝트 진행중!</text>
+
+                  <div className={styles.rowMintBox2}>
+                    <div className={styles.mintBox2}>
+                      <text className={styles.boxText}>Web Hacking</text>
+                      <text className={styles.boxContentText}>
+                        OWASP 선청 핵심 보안 취약점 <br /> OWASP TOP10을 중심으로 <br /> 웹 취약점 집중 분석 및 해킹
+                      </text>
+                      {/* <div className={styles.clickButton2}>
+                        <ActivityButton url="/Webhacking" />
+                      </div> */}
                     </div>
-                  </div>
-                  <div className={styles.mintBox2}>
-                    <text className={styles.boxText}>Reversing</text>
-                    <text className={styles.boxContentText}>
-                      무슨 모의 해킹<br></br>웹 환경 구현하여 모의 해킹하기
-                    </text>
-                    <div className={styles.clickButton2}>
-                      <ActivityButton url="/Reversing" />
+                    <div className={styles.mintBox2}>
+                      <text className={styles.boxText}>Reversing</text>
+                      <text className={styles.boxContentText}>
+                        모의해킹 환경 개발부터 실습까지 <br />
+                        화이트 해커로서 사이버보안
+                        <br />
+                        취약점을 파악하고 해킹하기
+                      </text>
+                      {/* <div className={styles.clickButton2}>
+                        <ActivityButton url="/Reversing" />
+                      </div> */}
                     </div>
-                  </div>
-                  <div className={styles.mintBox2}>
-                    <text className={styles.boxText}>Forensics</text>
-                    <text className={styles.boxContentText}>
-                      포렌식 툴을 사용해
-                      <br />
-                      최신 포렌식 동향을 반영한
-                      <br />
-                      국제 포렌식 대회 문제 풀어보기
-                    </text>
-                    <div className={styles.clickButton2}>
-                      <ActivityButton url="/Forensic" />
+                    <div className={styles.mintBox2}>
+                      <text className={styles.boxText}>Forensics</text>
+                      <text className={styles.boxContentText}>
+                        포렌식 툴을 사용해
+                        <br />
+                        최신 포렌식 동향을 반영한
+                        <br />
+                        국제 포렌식 대회 문제 풀어보기
+                      </text>
+                      {/* <div className={styles.clickButton2}>
+                        <ActivityButton url="/Forensic" />
+                      </div> */}
                     </div>
-                  </div>
-                  <div className={styles.mintBox2}>
-                    <text className={styles.boxText}>Development</text>
-                    <text className={styles.boxContentText}>
-                      보안과 관련된 주제,
-                      <br /> 시큐어 코딩을 접목한
-                      <br /> 웹/앱 개발 프로젝트
-                    </text>
-                    <div className={styles.clickButton2}>
-                      <ActivityButton url="/Development" />
+                    <div className={styles.mintBox2}>
+                      <text className={styles.boxText}>Development</text>
+                      <text className={styles.boxContentText}>
+                        보안과 관련된 주제,
+                        <br /> 시큐어 코딩을 접목한
+                        <br /> 웹/앱 개발 프로젝트
+                      </text>
+                      {/* <div className={styles.clickButton2}>
+                        <ActivityButton url="/Development" />
+                      </div> */}
                     </div>
                   </div>
                 </div>
