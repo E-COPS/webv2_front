@@ -2,68 +2,60 @@ import NavBar from '../components/NavBar';
 import BottomBar from '../components/BottomBar';
 import styles from './Recruitment.module.css';
 import Button from '../components/Recruitment_Button';
-import sendEmail, { SendEmail } from '../components/sendEmail';
-import logo from '../images/logo-img.png';
+// import logo from '../images/logo-img.png';
+import poster from '../images/12th_recruit_poster.jpg';
 /*import { Button } from 'bootstrap';*/
 /*import toggleButton from '../components/Toggle_Button';*/
 import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import recruitPoster from '../images/12th_recruit_poster.jpg';
 
 function Recruitment() {
   const isNormal = useMediaQuery({ minWidth: 319 });
   const [btnClick_1, setBtnClick_1] = useState(false);
   const [btnClick_2, setBtnClick_2] = useState(false);
   const [btnClick_3, setBtnClick_3] = useState(false);
-  const button = document.querySelector('button');
-  const dialog = document.querySelector('dialog');
 
-  // button.addEventListener('click', () => {
-  //   dialog.showModal();
-  // });
-  // dialog.addEventListener('close', () => {
-  //   console.log(dialog.returnValue);
-  // });
   return (
     <body>
       {isNormal ? (
         <>
           <header>
-            <NavBar />
+            <NavBar isCurrent={'recruit'} />
           </header>
           <main className={styles.mainContainer}>
             <div className={styles.contentContainer}>
               {/* header text */}
               {/* <div className = {styles.headerContainer}>
-                <text className = {styles.headerText}>WELCOME👋<br></br>WE ARE EWHA’S CLUB</text>
-                <div className = {styles.txtBtw}>
-                  <text className = {styles.headerText}>12TH</text>
-                  <img src={logo} className={styles.logoImg} alt='e-cops'/>
-                </div>
-                <text className = {styles.headerText}>ROOKIE RECRUITING</text>
-                <div className = {styles.txtEnd}>
-                  <text className = {styles.headerText}>IS COMING!</text>
-                </div>
-              </div> */}
+          <text className = {styles.headerText}>WELCOME👋<br></br>WE ARE EWHA’S CLUB</text>
+          <div className = {styles.txtBtw}>
+            <text className = {styles.headerText}>12TH</text>
+            <img src={logo} className={styles.logoImg} alt='e-cops'/>
+          </div>
+          <text className = {styles.headerText}>ROOKIE RECRUITING</text>
+          <div className = {styles.txtEnd}>
+            <text className = {styles.headerText}>IS COMING!</text>
+          </div>
+        </div> */}
 
               {/* content 1 - 12기 모집 */}
-              <text className={`${styles.midText} ${styles.leftText}`}>E-COPS 12기 모집</text>
               <div className={`${styles.columnContainer} ${styles.columnContainer2}`}>
-                <div className={styles.recruitPoster}>
-                  {/* <img src="../images/12th_recruit_poster.jpg"></img> */}
-                  <img src={recruitPoster} alt="12기 모집 포스터"></img>
-                </div>
+                <text className={`${styles.midText} ${styles.leftText}`}>E-COPS 12기 모집</text>
                 <div className={styles.rowContainer2}>
                   <text className={styles.contentText}>
                     E-COPS에서 12기 신입 부원을 모집합니다.<br></br>
-                    보안에 관심이 많고 열정이 넘치는<br></br>
-                    이화여대 학부생 누구나 지원 가능!!
+                    보안에 관심이 많고 열정이 넘치는 <br></br>이화여대 학부생 누구나 지원 가능!!
                   </text>
                   <div className={styles.midTextButton}>
-                    <Button />
+                    <Button text="12기 지원하기" />
                   </div>
                 </div>
               </div>
+
+              {/* header poster */}
+              <div className={styles.headerContainer}>
+                <img src={poster} className={styles.poster} alt="e-cops" />
+              </div>
+
               {/* content 2 - Recruiting Process */}
               <div className={styles.content3Container}>
                 <text className={styles.midText}>RECRUITING PROCESS</text>
@@ -102,7 +94,7 @@ function Recruitment() {
               <div className={styles.content3Container}>
                 <text className={styles.midText}>자주 묻는 질문</text>
               </div>
-              <div className={styles.columnQnaContainer}>
+              <div className={styles.columnContainer}>
                 {/* 질문 1 */}
                 <div className={styles.toggle}>
                   <button className={styles.btnRow} onClick={() => setBtnClick_1(!btnClick_1)}>
@@ -117,7 +109,7 @@ function Recruitment() {
                   {/* 버튼 클릭 여부에 따라 답변 text 렌더링*/}
                   {btnClick_1 ? (
                     <div className={styles.textBox}>
-                      <text className={styles.qnaAnswer}>
+                      <text style={{ fontSize: 18, lineHeight: 2 }}>
                         동아리에서 보안을 열정적으로 성실하게 함께 공부하실 수 있는 분이라면 보안 왕초보라도 누구나
                         환영합니다! 비기너 트랙은 보안 기초 지식 학습을 목표로 하기 때문에 배경 지식이나 경험의 유무를
                         선발에 중점적으로 고려하지 않습니다. 중요한 것은 오로지 지원자님의 보안 공부에 대한 열정입니다.
@@ -136,9 +128,9 @@ function Recruitment() {
                   </button>
                   {btnClick_2 ? (
                     <div className={styles.textBox}>
-                      <text className={styles.qnaAnswer}>
+                      <text style={{ fontSize: 18 }}>
                         학기말에 비기너 부원들의 수요조사를 받아서 가장 수요가 많은 두 분야를 다음 기수 챌린저 분야로
-                        선정합니다. <br /> 12기의 경우 웹 해킹과 시스템 해킹의 수요가 가장 높아 12기 챌린저 분야로
+                        선정합니다. 12기의 경우 웹 해킹과 시스템 해킹의 수요가 가장 높아 12기 챌린저 분야로
                         선정되었습니다.
                       </text>
                     </div>
@@ -154,10 +146,9 @@ function Recruitment() {
                   </button>
                   {btnClick_3 ? (
                     <div className={styles.textBox}>
-                      <text className={styles.qnaAnswer}>
-                        1년[(학기+방학) × 2] 이상 활동해야 수료증을 발급받을 수 있습니다. <br /> 비기너로 들어온 분들은
+                      <text style={{ fontSize: 18 }}>
+                        1년 [ (학기+방학) × 2 ] 이상 활동해야 수료증을 발급받을 수 있습니다. 비기너로 들어온 분들은
                         비기너 1학기+방학을 활동하면 다음 학기는 자동으로 챌린저로 1학기+방학동안 활동하게 됩니다.
-                        <br />
                         챌린저로 들어온 분들은 챌린저로 1년 이상 활동해야 합니다.
                       </text>
                     </div>
@@ -176,25 +167,19 @@ function Recruitment() {
                   </div>
                   <div className={styles.midContainer}>
                     <text className={styles.contentText2}>
-                      신규 모집에 대한 모든 안내는 노션에 올라가있습니다. <br />
-                      노션 확인 후, 동아리 활동, 리크루팅 등에 대한 <br />
-                      궁금한 점이 있다면 언제든지 문의주세요.
-                    </text>
-                    <text className={styles.contentText2}>
-                      - 이메일: ewha.ecops@gmail.com <br />- 인스타그램: @ecops_ewha
+                      신규 모집에 대한 모든 안내는 노션에 있습니다.<br></br>
+                      노션 확인 후, 동아리 활동, 리크루팅 등에 대한<br></br>
+                      궁금한 점이 있다면 언제든지 문의주세요.<br></br>
+                      <br></br>
+                      <br></br>- 이메일: ewha.ecops@gmail.com<br></br>- 인스타그램: @ecops_ewha
                     </text>
                   </div>
                   <div className={styles.midContainer}>
                     <button className={styles.qButton}>
-                      <a
-                        href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ewha.ecops@gmail.com"
-                        target="_blank"
-                      >
+                      <a href="https://mail.google.com/mail/u/0/?fs=1&to=ewha.ecops@gmail.com&tf=cm">
                         이메일로 문의하기
                       </a>
                     </button>
-                    {/* <dialog><sendEmail /></dialog> */}
-                    {/* <SendEmail /> */}
                   </div>
                 </div>
               </div>
