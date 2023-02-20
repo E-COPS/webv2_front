@@ -32,51 +32,26 @@ function Member() {
                   <TextBox text={'Executive'} />
                 </div>
                 <div className={styles.teamContainer}>
-                  <div className={styles.executiveTeam}>회장</div>
-                  <ProfileBox text="고민지" img="../images/members/kohmj.png" />
-                  <div className={styles.executiveTeam}>교육부</div>
-                  <ProfileBox text="김유경" img="../images/members/kimyk.png" />
-                </div>
-
-                <div className={styles.smallRowContainer}>
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                </div>
-                <div className={styles.smallRowContainer}>
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                </div>
-                <div className={styles.smallRowContainer}>
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                </div>
-                <div className={styles.smallRowContainer}>
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
+                  <div className={styles.rowContainer}>
+                    <div className={styles.executiveTeam}>회장</div>
+                    <ProfileBox text="고민지" img="../images/members/kohmj.png" />
+                  </div>
+                  <div className={styles.rowContainer}>
+                    <div className={styles.executiveTeam}>교육부</div>
+                    <ProfileBox text="김유경" img="../images/members/kimyk.png" />
+                    <ProfileBox text="김주은" img="../images/members/kimje.png" />
+                    <ProfileBox text="배윤주" img="../images/members/baeys.jpg" />
+                    <ProfileBox text="남윤정" img="../images/members/namyj.jpg" />
+                  </div>
+                  <div className={styles.rowContainer}>
+                    <div className={styles.executiveTeam}>홍보부</div>
+                    <ProfileBox text="진혜린" img="../images/members/jinhr.jpg" />
+                    <ProfileBox text="김하은" img="../images/members/kimyk.png" />
+                  </div>
+                  <div className={styles.rowContainer}>
+                    <div className={styles.executiveTeam}>회계부</div>
+                    <ProfileBox text="이슬" img="../images/members/lees.jpg" />
+                  </div>
                 </div>
               </div>
             ) : (
@@ -84,28 +59,7 @@ function Member() {
                 <div style={{ width: 1000 }}>
                   <TextBox text={'Executive'} />
                 </div>
-                <div className={styles.rowContainer}>
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                  <ProfileBox
-                    text="교육부 어쩌구"
-                    img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEd_TAd9zUnbOApOSfOajPL7CUmNQa8V3KQ&usqp=CAU"
-                  />
-                </div>
+                <div className={styles.rowContainer}></div>
                 <div className={styles.rowContainer}>
                   <ProfileBox
                     text="교육부 어쩌구"
